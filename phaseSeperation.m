@@ -1,4 +1,4 @@
-function [avg,count] = phaseSeperation(numbers)
+function [index] = phaseSeperation(numbers)
 
     % Location based clustering
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -9,18 +9,18 @@ function [avg,count] = phaseSeperation(numbers)
     avgSil = zeros(1,6);
     for i = 1:6
         clust = kmeans(X,i);
-        s - silhouette(X,clust);
+        s = silhouette(X,clust);
         avgSil(i) = mean(s);
     end
     % Finding the ideal number of clusters
     [~,in] = max(avgSil);
-    [index,C] = kmeans(X,in);
+    [indexLoc,C] = kmeans(X,in);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     % Phase based clustering
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    bins = []
-    edges = linspace(min(phase),max(phase), 40);
+    bins = [];
+    edges = linspace(min(phase),max(phase), 15);
     for i = 1:length(edges)-1
         if i == 1
             data = find(phase >= edges(i) & phase <= edges(i+1));
@@ -33,8 +33,8 @@ function [avg,count] = phaseSeperation(numbers)
     end
     bins = sortrows(bins,1,'ascend');
     diffMeans = diff(bins(:,1));
-    for i = length(diffMeans)
-        if diffMeans(i) < 0.1;
+    for i = 1:length(diffMeans)
+        if diffMeans(i) < 0.15
             % Correct the new mean of the phase 
             bins(i,1) = (bins(i,1)*bins(i,2) + bins(i+1,1)*bins(i+1,2))/(bins(i,2) + bins(i+1,2));
             % Change the number of particles in the bin
@@ -46,29 +46,34 @@ function [avg,count] = phaseSeperation(numbers)
             bins(i+1,1) = nan;
         end
     end
+    bins(any(isnan(bins),2),:) = [];
     bins = sortrows(bins,2,'descend');
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     % Indexing the clusters from phase based clustering
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    
-
-
-
-
-
-
+    indexPh = zeros(1,length(phase));
+    for i = 1:size(bins,1)
+        ind = find(phase >= bins(i,3) & phase <= bins(i,4));
+        indexPh(ind) = i;
+    end
     % Combining the resluts from the both clustering methods
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+    % No idea how to combine results 
+    % What if the clustering reults are different 
+    % what if there are clashes in phase based clustering 
+    % How to combine k means and phased based clustering
 
     %% Testing 
-    figure
-    gscatter(X(:,1),X(:,2),idx,'bmgk');
+    % figure
+    % gscatter(X(:,1),X(:,2),idx,'bmgk');
 
 
     %Return the final indexing
-
+    index = indexLoc;
+    %index = indexPh;
 end
-    
 
+% Fixed needed-
+% Combine indexing and clusting from the 2 methods 
+% Possibly add another method for indexing

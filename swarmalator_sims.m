@@ -218,9 +218,25 @@ bins = sortrows(bins,2,'descend');
 clusterPhDiff = abs(bins(1,1) - bins(2,1));
 fprintf('%f is the phase difference of the clusters\n',clusterPhDiff);
 fprintf('%d is the abs diff with pi =  %.4f\n', abs(pi - clusterPhDiff),pi);
+indexPh = zeros(1,length(y_full(end,2*N+1:end)));
+for i = 1:size(bins,1)
+    ind = find(y_full(end,2*N+1:end) >= bins(i,3) & y_full(end,2*N+1:end) <= bins(i,4));
+    indexPh(ind) = i;
+end
 figure(4)
 plot(y_full(end,2*N+1:end),1:N,'kx');
 hold on 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% index = phaseSeperation(y_full(end,:));
+% figure(3)
+% gscatter(y_full(end,1:N),y_full(end,N+1:2*N),index,'bgmk');
+% [C,P] = centroidCal(y_full(end,:),index);
+% hold on
+% plot(C(:,1),C(:,2),'kx');
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%
@@ -247,9 +263,9 @@ daspect([1 1 1]);
 phase_index1 = find((abs(y_stable(2*N+1:end) - bins(1,1)) <= 0.1));
 phase_index2 = find((abs(y_stable(2*N+1:end)-bins(2,1)) <= 0.1));
 phase_rogue = setdiff(1:N,[phase_index1,phase_index2]);
-%avgPhase = (bins(1,1)*bins(1,2) + bins(2,1)*bins(2,2))/sum(bins(1:2,2));
+avgPhase = (bins(1,1)*bins(1,2) + bins(2,1)*bins(2,2))/sum(bins(1:2,2));
 ph = y_stable(2*N + 1:end);
-avgPhase = mean(ph(phase_rogue));
+%avgPhase = mean(ph(phase_rogue));
 
 y_stable(2*N + phase_rogue) = avgPhase;
 
