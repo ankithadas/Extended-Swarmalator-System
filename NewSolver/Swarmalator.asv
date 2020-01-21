@@ -1,0 +1,13 @@
+classdef Swarmalator
+    properties (GetAccess='public', SetAccess='public')
+        position
+        velocity
+        phase
+    end
+    methods
+        function inverseDistance = getInverseDis(objects)
+            global N
+            inverseDistance = vecnorm(repmat(position,N,1)- objects(:).position);
+        end
+    end
+end
