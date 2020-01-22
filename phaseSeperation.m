@@ -4,17 +4,17 @@ function [index] = phaseSeperation(numbers)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     X = reshape(numbers,[],3);
     phase = X(:,3);
-    X(:,3) = 10*X(:,3);
-
-    avgSil = zeros(1,6);
-    for i = 1:6
-        clust = kmeans(X,i);
-        s = silhouette(X,clust);
-        avgSil(i) = mean(s);
-    end
-    % Finding the ideal number of clusters
-    [~,in] = max(avgSil);
-    [indexLoc,C] = kmeans(X,in);
+%     X(:,3) = 10*X(:,3);
+% 
+%     avgSil = zeros(1,6);
+%     for i = 1:6
+%         clust = kmeans(X,i);
+%         s = silhouette(X,clust);
+%         avgSil(i) = mean(s);
+%     end
+%     % Finding the ideal number of clusters
+%     [~,in] = max(avgSil);
+%     [indexLoc,C] = kmeans(X,in);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     % Phase based clustering
@@ -70,8 +70,8 @@ function [index] = phaseSeperation(numbers)
 
 
     %Return the final indexing
-    index = indexLoc;
-    %index = indexPh;
+    %index = indexLoc;
+    index = indexPh;
 end
 
 % Fixed needed-

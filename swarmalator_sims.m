@@ -160,9 +160,9 @@ y_full(:,dim*N + 1:end) = mod(y_full(:,dim*N + 1:end),2*pi);
 % save(file1);
 
 %%
-dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
+% dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
 
-status = system(['mkdir ',dir]);
+% status = system(['mkdir ',dir]);
 
 minx = min(min(y_full(:,1:N)));
 maxx = max(max(y_full(:,1:N)));
