@@ -43,3 +43,11 @@ invDis2 = invDis2 + eye(N);
 invDis2 = 1./invDis2;
 toc;
 
+tic 
+A=pdist(pts);
+Y = 1./internal.stats.pdistmex(pts','euc',[]);
+invDis3 = zeros(N,N);
+invDis3(tril(true(N),-1)) = Y;
+invDis3 = invDis3 + invDis3';
+invDis3 = invDis3 + eye(N);
+toc

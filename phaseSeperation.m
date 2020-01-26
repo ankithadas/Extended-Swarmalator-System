@@ -32,6 +32,7 @@ function [index] = phaseSeperation(numbers)
         end
     end
     bins = sortrows(bins,1,'ascend');
+    % Consecutive bins with small difference can cause issues 
     diffMeans = diff(bins(:,1));
     for i = 1:length(diffMeans)
         if diffMeans(i) < 0.15

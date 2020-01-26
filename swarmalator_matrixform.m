@@ -9,10 +9,11 @@ v = zeros(N,dim);
 % then all z's etc
 pts = reshape(y(1:dim*N),N,dim);
 %Make a NxNxdim matrix with the differences between points
-PTS = zeros(N,N,dim);
-for i=1:N
-    PTS(i,:,:) = pts;
-end
+% PTS = zeros(N,N,dim);
+% for i=1:N
+%     PTS(i,:,:) = pts;
+% end
+PTS = permute(repmat(pts,1,1,N),[3 1 2]);
 PTSdiff = PTS - permute(PTS, [2 1 3]); %permute is like transpose
 % %PTSdiff(i,j,:) is equal to pts(j,:) - pts(i,:)
 % %make it into a NxN cell array, with the i,j cell being pts(j,:) - pts(i,:)
@@ -24,17 +25,26 @@ PTSdiff = PTS - permute(PTS, [2 1 3]); %permute is like transpose
 % % adjacency matrix for the oscillator dynamics
 % A_osc = 1./normdiff;
 
-invDis = zeros(N,N);
-for i = 1:N 
-%     for j = i:N 
-%         invDis(i,j) = norm(pts(i,:)- pts(j,:)); %% could optimize this section more for speed 
-%         invDis(j,i) = invDis(i,j);
-%     end
-    invDis(i,:) = vecnorm(repmat(pts(i,:),N,1) - pts(:,:),2,2);
-end
-invDis = invDis + eye(N);
-invDis = 1./invDis;
+%invDis = zeros(N,N);
+% for i = 1:N 
+% %     for j = i:N 
+% %         invDis(i,j) = norm(pts(i,:)- pts(j,:)); %% could optimize this section more for speed 
+% %         invDis(j,i) = invDis(i,j);
+% %     end
+%     invDis(i,:) = vecnorm(repmat(pts(i,:),N,1) - pts(:,:),2,2);
+% end
+% invDis = invDis + eye(N);
+% invDis = 1./invDis;
 
+
+% invDis = squareform(internal.stats.pdistmex(pts','euc',[]));
+% invDis = 1./(invDis + eye(N));
+
+Y = 1./internal.stats.pdistmex(pts','euc',[]);
+invDis = zeros(N,N);
+invDis(tril(true(N),-1)) = Y;
+invDis = invDis + invDis';
+invDis = invDis + eye(N);
 
 % get the oscillator phases from y
 phi = y(dim*N + 1:end);
