@@ -8,3 +8,5 @@ function pos = pointsInC(centerX,centerY,R,count)
     pos = [x,y];
 end
 
+% Code works as intended
+% Nothing to change

@@ -5,7 +5,8 @@
 %% 
 %%
 
-clear all;
+clear;
+clc;
 
 %% Set up the matlabpool
 % num_cores = 4; % How many CPU cores to use (set to 1 to disable parallelism, set to 0 to use matlab's default)
@@ -26,7 +27,7 @@ clear all;
 reset(RandStream.getGlobalStream,1);
 rand_init = 76599;
 randn(rand_init,2);  %% Discouraged syntax for randn 
-
+clear rand_init
 %% Native frequencies 
 
 N = 100;
@@ -157,34 +158,34 @@ toc
 
 %%
 % 
-% file1 = sprintf('swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g.mat',distro,N,K,J,gamma1,gamma2);
-% 
-% save(file1);
+file1 = sprintf('swarmalator_%s_N_%i_K_%g_J_%g_g1_%.2g_g2_%.2g.mat',distro,N,K,J,gamma1,gamma2);
 
-%%
-% dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
+save(file1);
 
-% status = system(['mkdir ',dir]);
+%
+dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
 
-% minx = min(min(y_full(:,1:N)));
-% maxx = max(max(y_full(:,1:N)));
-% miny = min(min(y_full(:,N+1:2*N)));
-% maxy = max(max(y_full(:,N+1:2*N)));
-% %f = figure('visible','off');
-% figure(2);
-% for i=1:na+1
-%     colormap('hsv');
-%     scatter(y_full(i,1:N),y_full(i,N+1:2*N),[],y_full(i,2*N+1:end)),colorbar;
-%     caxis([0 2*pi]);
-%     xlim([minx maxx]);
-%     ylim([miny maxy]);
-%     daspect([1 1 1]); 
-%     pause(0.05) 
-%     %waitforbuttonpress;
-% %      file2 = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g\\fig_%05i.png',distro,N,K,J,gamma1,gamma2,i);
-% %     saveas(f,file2);
-% end
+status = system(['mkdir ',dir]);
 
+minx = min(min(y_full(:,1:N)));
+maxx = max(max(y_full(:,1:N)));
+miny = min(min(y_full(:,N+1:2*N)));
+maxy = max(max(y_full(:,N+1:2*N)));
+%f = figure('visible','off');
+figure(2);
+for i=1:na+1
+    colormap('hsv');
+    scatter(y_full(i,1:N),y_full(i,N+1:2*N),[],y_full(i,2*N+1:end)),colorbar;
+    caxis([0 2*pi]);
+    xlim([minx maxx]);
+    ylim([miny maxy]);
+    daspect([1 1 1]); 
+    pause(0.05) 
+    %waitforbuttonpress;
+%      file2 = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g\\fig_%05i.png',distro,N,K,J,gamma1,gamma2,i);
+%     saveas(f,file2);
+end
+ 
 
 % %%
 % figure(3)
@@ -229,13 +230,13 @@ toc
 % plot(y_full(end,2*N+1:end),1:N,'kx');
 % hold on 
 
-% %%
-% index = phaseSeperation(y_full(end,:));
-% figure(3)
-% gscatter(y_full(end,1:N),y_full(end,N+1:2*N),index,'bgmk');
-% [C,P] = centroidCal(y_full(end,:),index);
-% hold on
-% plot(C(:,1),C(:,2),'kx');
+%%
+index = phaseSeperation(y_full(end,:));
+figure(3)
+gscatter(y_full(end,1:N),y_full(end,N+1:2*N),index,'bgmk');
+[C,P] = centroidCal(y_full(end,:),index);
+hold on
+plot(C(:,1),C(:,2),'kx');
 
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

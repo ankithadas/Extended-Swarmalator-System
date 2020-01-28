@@ -43,6 +43,7 @@ invDis2 = invDis2 + eye(N);
 invDis2 = 1./invDis2;
 toc;
 
+% Fastest code 
 tic 
 A=pdist(pts);
 Y = 1./internal.stats.pdistmex(pts','euc',[]);

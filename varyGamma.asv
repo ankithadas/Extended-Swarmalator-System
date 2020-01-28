@@ -31,11 +31,10 @@ y1 = 1 - xp;
 y2 = flipud(xp) - 1;
 y3 = -1 - flipud(xm);
 y4 = 1 + xm;
-points = unique([[xp,y1];[flipud(xp),y2];[flipud(xm),y3];[xm,y4]],'stable','row');
-
-% l = [false ;(points(2:end,1) == points(1:end-1,1) & points(2:end,2) == points(1:end-1,2))];
-% points = points(~l,:);
-% points(end,:) = [];
+points = [[xp,y1];[flipud(xp),y2];[flipud(xm),y3];[xm,y4]];
+l = [false ;(points(2:end,1) == points(1:end-1,1) & points(2:end,2) == points(1:end-1,2))];
+points = points(~l,:);
+points(end,:) = [];
 figure
 plot(points(:,1),points(:,2));
 
@@ -55,11 +54,6 @@ for i = 1:size(points,1)
     maxy = max(max(y_full(:,N+1:2*N)));
     
     f = figure(1);
-    file1 = sprintf('g1_%d_g2_%d',gamma1,gamma2);
-    v = VideoWriter(file1,'Motion JPEG AVI');
-    v.Quality = 80;
-    v.FrameRate = 15;
-    open(v);
     for k=1:timeSteps+1
         colormap('hsv');
         scatter(y_full(k,1:N),y_full(k,N+1:2*N),[],y_full(k,2*N+1:end)),colorbar;
@@ -67,12 +61,12 @@ for i = 1:size(points,1)
         xlim([minx maxx]);
         ylim([miny maxy]);
         daspect([1 1 1]); 
-        writeVideo(v,getframe(gcf));
         pause(0.05) 
         %waitforbuttonpress;    
         %file2 = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g\\fig_%05i.png',distro,N,K,J,gamma1,gamma2,i);
         %saveas(f,file2);
     end
-    close(v)
     close(f)
 end
+
+

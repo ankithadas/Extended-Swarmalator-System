@@ -20,7 +20,7 @@ function [index] = phaseSeperation(numbers)
     % Phase based clustering
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     bins = [];
-    edges = linspace(min(phase),max(phase), 15);
+    edges = linspace(min(phase),max(phase), 100);
     for i = 1:length(edges)-1
         if i == 1
             data = find(phase >= edges(i) & phase <= edges(i+1));
@@ -32,7 +32,10 @@ function [index] = phaseSeperation(numbers)
         end
     end
     bins = sortrows(bins,1,'ascend');
-    % Consecutive bins with small difference can cause issues 
+     
+    %%%%% This section of the code is discontinued and put for removal
+    %{ 
+    ERROR: Consecutive bins with small difference would not be combined properly
     diffMeans = diff(bins(:,1));
     for i = 1:length(diffMeans)
         if diffMeans(i) < 0.15
@@ -47,7 +50,25 @@ function [index] = phaseSeperation(numbers)
             bins(i+1,1) = nan;
         end
     end
-    bins(any(isnan(bins),2),:) = [];
+    %}
+    %%%%%
+    
+    i = 1;
+    diffTol = 0.15;
+    while i<=size(bins,1)
+        k = 0;
+        while i + k < size(bins,1) && bins(i + k + 1,1) - bins(i+k,1) < diffTol
+            k = k + 1;
+        end
+        if k ~= 0
+            bins(i,1) = sum(bins(i:i+k,1).*bins(i:i+k,2))/sum(bins(i:i+k,2));
+            bins(i,2) = sum(bins(i:i+k,2));
+            bins(i,3) = min(bins(i:i+k,3));
+            bins(i,4) = max(bins(i:i+k,4));
+            bins(i+1:i+k,:) = [];
+        end
+        i = i+1;
+    end
     bins = sortrows(bins,2,'descend');
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -55,7 +76,7 @@ function [index] = phaseSeperation(numbers)
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     indexPh = zeros(1,length(phase));
     for i = 1:size(bins,1)
-        ind = find(phase >= bins(i,3) & phase <= bins(i,4));
+        ind = phase >= bins(i,3) & phase <= bins(i,4);
         indexPh(ind) = i;
     end
     % Combining the resluts from the both clustering methods
