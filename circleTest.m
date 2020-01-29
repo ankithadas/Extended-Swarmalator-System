@@ -16,7 +16,7 @@ dim = 2;
 stepSize = 1;
 timeSteps = 100;
 reset(RandStream.getGlobalStream,1);
-n = 8;
+n = 5;
 r = 1;
 theta = linspace(0, 2*pi,n+1);
 theta(end) = [];
@@ -37,7 +37,7 @@ y00 = reshape(pos,1,[]);
 % Solve the system
 options = odeset('RelTol',1e-6,'AbsTol',1e-6);
 N = size(pos,1);
-[~,y_full] = ode113(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize],y00, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
+[~,y_full] = ode45(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize],y00, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
 
 minx = min(min(y_full(:,1:N)));
 maxx = max(max(y_full(:,1:N)));
@@ -45,20 +45,26 @@ miny = min(min(y_full(:,N+1:2*N)));
 maxy = max(max(y_full(:,N+1:2*N)));
 d = zeros(timeSteps+1,1);
 figure
-for i=1:timeSteps+1
-    colormap('hsv');
-    scatter(y_full(i,1:N),y_full(i,N+1:2*N),[],y_full(i,2*N+1:end)),colorbar;
-    caxis([0 2*pi]);
-    xlim([minx maxx]);
-    ylim([miny maxy]);
-    daspect([1 1 1]); 
+colormap('hsv');
+ax = axes;
+ax.XLim = [minx maxx];
+ax.YLim = [miny maxy];
+ax.NextPlot = 'add';
+plot1 = scatter(y_full(1,1:N),y_full(1,N+1:2*N),[],y_full(1,2*N+1:end));
+colorbar;
+caxis([0 2*pi]);
+daspect([1 1 1]); 
+for i=2:timeSteps+1
+    plot1.XData = y_full(i,1:N);
+    plot1.YData = y_full(i,N+1:2*N);
+    plot1.CData = y_full(i,2*N + 1:end);
     % hold on
-    index = phaseSeperation(y_full(i,:));
+    index = phaseSeparation(y_full(i,:));
     [C,~] = centroidCal(y_full(i,:),index);
     dis = norm(diff(C));
     d(i) = dis;
     % plot(C(:,1),C(:,2),'kx');
-    pause(0.01) 
+    pause(0.02) 
     % hold off
     % drawnow
     %waitforbuttonpress;
@@ -67,7 +73,7 @@ for i=1:timeSteps+1
 end
 
 
-index = phaseSeperation(y_full(end,:));
+index = phaseSeparation(y_full(end,:));
 [C,pos] = centroidCal(y_full(end,:),index);
 dis = norm(diff(C));
 fprintf('The distance between the clusters is %.5f\n',dis);

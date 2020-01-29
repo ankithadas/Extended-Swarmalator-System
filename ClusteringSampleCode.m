@@ -27,7 +27,7 @@ gscatter(y_full(end,1:100),y_full(end,101:200),idx,'bmgk');
 % Using clustering algo find the clusters 
 % Using K means find the index of each cluster 
 % Mean Phase and standard deviation in each cluster 
-% Find the centeroid of each cluster 
+% Find the centroid of each cluster 
 % Finally find inter cluster distance 
 
 % Need to improve productivity 

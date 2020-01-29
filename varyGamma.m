@@ -12,7 +12,7 @@ randn(rand_init, 2);
 load('DataFiles\\swarmalator_identical_N_100_K_-0.5_J_0.8_g1_0.67_g2_-0.33.mat','y_full','options');
 clear ans
 
-% Redfine variables for code readability
+% Redefine variables for code readability
 N = 100;
 J = 0.8;
 K = -0.5;
@@ -69,7 +69,7 @@ for i = 1:size(points,1)
         daspect([1 1 1]); 
         writeVideo(v,getframe(gcf));
         pause(0.05) 
-        %waitforbuttonpress;    
+        %waitforbuttonpress;
         %file2 = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g\\fig_%05i.png',distro,N,K,J,gamma1,gamma2,i);
         %saveas(f,file2);
     end

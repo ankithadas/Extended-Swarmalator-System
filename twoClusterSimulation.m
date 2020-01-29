@@ -94,9 +94,9 @@ for J = Jarry
         %     colormap('hsv');
         %     scatter(y_full(i,1:N),y_full(i,N+1:2*N),[],y_full(i,2*N+1:end),'.'),colorbar;
         %     caxis([0 2*pi]);
-        %     xlim([minx maxx]);
-        %     ylim([miny maxy]);
-        %     daspect([1 1 1]); 
+        %     
+        %     
+        %     
         %     pause(0.01) 
         %     %waitforbuttonpress;
         % %      file2 = sprintf        ('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g\\fig_%05i.png',distro,N,K,J,    gamma1, gamma2,i);
@@ -108,7 +108,7 @@ for J = Jarry
         % save(file1,'y_full','N');
 
 
-        index = phaseSeperation(y_full(end,:));
+        index = phaseSeparation(y_full(end,:));
         [C,pos] = centroidCal(y_full(end,:),index);
 
         % figure

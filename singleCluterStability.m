@@ -12,7 +12,7 @@ gamma1 = 2/3;
 gamma2 = -1/3;
 dim = 2;
 stepSize = 1;
-timeSteps = 100;
+timeSteps = 200;
 % Make a single cluster 
 pos = pointsInC(0,0,1,N);
 
@@ -21,7 +21,7 @@ pos(:,3) = 0;
 
 y00 = reshape(pos,1,[]);
 options = odeset('RelTol',1e-6,'AbsTol',1e-6);
-[~,y_full] = ode113(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize],y00, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
+[~,y_full] = ode45(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize],y00, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
 
 minx = min(min(y_full(:,1:N)));
 maxx = max(max(y_full(:,1:N)));
@@ -36,36 +36,44 @@ xlim([minx maxx]);
 ylim([miny maxy]);
 daspect([1 1 1]);
 
-% gamma1 = gamma1 + 0.2;
-% gamma2 = gamma2 - 0.5;
-J = 0.1;
-K = -1;
+gamma1 = gamma1;
+gamma2 = gamma2;
+% J = 0.1;
+% K = -1;
 y_stable = y_full(end,:);
+y_stable(2*N+1:end) = randn(N,1)*10e-2;
 %y_stable(2*N + 20) = 6;
 figure;
 colormap('hsv');
 scatter(y_stable(1:N),y_stable(N+1:2*N),[],y_stable(2*N+1:end)),colorbar;
-caxis([0 2*pi]);
+%caxis([0 2*pi]);
 xlim([minx maxx]);
 ylim([miny maxy]);
 daspect([1 1 1]); 
-[T,y_new] = ode113(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize],y_stable, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
+options = odeset('RelTol',1e-6,'AbsTol',1e-6,'OutputFcn',@odePlotter);
+[T,y_new] = ode113(@swarmalator_matrixform,[0:stepSize :5*timeSteps*stepSize],y_stable, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
 
-minx = min(min(y_new(:,1:N)));
-maxx = max(max(y_new(:,1:N)));
-miny = min(min(y_new(:,N+1:2*N)));
-maxy = max(max(y_new(:,N+1:2*N)));
+% minx = min(min(y_new(:,1:N)));
+% maxx = max(max(y_new(:,1:N)));
+% miny = min(min(y_new(:,N+1:2*N)));
+% maxy = max(max(y_new(:,N+1:2*N)));
 
-figure(2);
-for i=1:length(T)
-    colormap('hsv');
-    scatter(y_new(i,1:N),y_new(i,N+1:2*N),[],y_new(i,2*N+1:end)),colorbar;
-    caxis([0 2*pi]);
-    xlim([minx maxx]);
-    ylim([miny maxy]);
-    daspect([1 1 1]); 
-    pause(0.05) 
-    %waitforbuttonpress;
-%      file2 = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g\\fig_%05i.png',distro,N,K,J,gamma1,gamma2,i);
-%     saveas(f,file2);
-end
+% colormap('hsv');
+% ax = axes;
+% ax.XLim = [minx maxx];
+% ax.YLim = [miny maxy];
+% ax.NextPlot = 'add';
+% plot1 = scatter(y_full(1,1:N),y_full(1,N+1:2*N),[],y_full(1,2*N+1:end));
+% caxis([0 2*pi]);
+% daspect([1 1 1]);
+% colorbar;
+% for i=2:na+1
+%     plot1.XData = y_full(i,1:N);
+%     plot1.YData = y_full(i,N+1:2*N);
+%     plot1.CData = y_full(i,2*N + 1:end);
+%     %drawnow update
+%     pause(0.05);
+%     %waitforbuttonpress;
+%     % file2 = sprintf('J_1.2\\fig_%05i.png',i);
+%     % saveas(f,file2);
+% end

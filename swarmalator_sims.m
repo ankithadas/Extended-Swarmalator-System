@@ -115,7 +115,7 @@ end
 
 %% Loop over coupling strengths K
 tic
-options = odeset('RelTol',1e-6,'AbsTol',1e-6);
+options = odeset('RelTol',1e-6,'AbsTol',1e-6,'OutputFcn',@odePlotter);
 
 dim = 2;
 
@@ -158,32 +158,39 @@ toc
 
 %%
 % 
-file1 = sprintf('swarmalator_%s_N_%i_K_%g_J_%g_g1_%.2g_g2_%.2g.mat',distro,N,K,J,gamma1,gamma2);
-
-save(file1);
+% file1 = sprintf('swarmalator_%s_N_%i_K_%g_J_%g_g1_%.2g_g2_%.2g.mat',distro,N,K,J,gamma1,gamma2);
+% 
+% save(file1);
 
 %
-dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
+% dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
+% 
+% status = system(['mkdir ',dir]);
 
-status = system(['mkdir ',dir]);
-
-minx = min(min(y_full(:,1:N)));
-maxx = max(max(y_full(:,1:N)));
-miny = min(min(y_full(:,N+1:2*N)));
-maxy = max(max(y_full(:,N+1:2*N)));
+minx = min(y_full(:,1:N),[],'all');
+maxx = max(y_full(:,1:N),[],'all');
+miny = min(y_full(:,N+1:2*N),[],'all');
+maxy = max(y_full(:,N+1:2*N),[],'all');
 %f = figure('visible','off');
 figure(2);
-for i=1:na+1
-    colormap('hsv');
-    scatter(y_full(i,1:N),y_full(i,N+1:2*N),[],y_full(i,2*N+1:end)),colorbar;
-    caxis([0 2*pi]);
-    xlim([minx maxx]);
-    ylim([miny maxy]);
-    daspect([1 1 1]); 
-    pause(0.05) 
+colormap('hsv');
+ax = axes;
+ax.XLim = [minx maxx];
+ax.YLim = [miny maxy];
+ax.NextPlot = 'add';
+plot1 = scatter(y_full(1,1:N),y_full(1,N+1:2*N),[],y_full(1,2*N+1:end));
+caxis([0 2*pi]);
+daspect([1 1 1]);
+colorbar;
+for i=2:na+1
+    plot1.XData = y_full(i,1:N);
+    plot1.YData = y_full(i,N+1:2*N);
+    plot1.CData = y_full(i,2*N + 1:end);
+    %drawnow update
+    pause(0.05);
     %waitforbuttonpress;
-%      file2 = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g\\fig_%05i.png',distro,N,K,J,gamma1,gamma2,i);
-%     saveas(f,file2);
+    % file2 = sprintf('J_1.2\\fig_%05i.png',i);
+    % saveas(f,file2);
 end
  
 
@@ -231,7 +238,7 @@ end
 % hold on 
 
 %%
-index = phaseSeperation(y_full(end,:));
+index = phaseSeparation(y_full(end,:));
 figure(3)
 gscatter(y_full(end,1:N),y_full(end,N+1:2*N),index,'bgmk');
 [C,P] = centroidCal(y_full(end,:),index);
