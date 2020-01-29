@@ -1,4 +1,4 @@
-function [index] = phaseSeperation(numbers)
+function [index] = phaseSeparation(numbers)
 
     % Location based clustering
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -82,7 +82,7 @@ function [index] = phaseSeperation(numbers)
     % Combining the resluts from the both clustering methods
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % No idea how to combine results 
-    % What if the clustering reults are different 
+    % What if the clustering results are different 
     % what if there are clashes in phase based clustering 
     % How to combine k means and phased based clustering
 
@@ -97,5 +97,5 @@ function [index] = phaseSeperation(numbers)
 end
 
 % Fixed needed-
-% Combine indexing and clusting from the 2 methods 
+% Combine indexing and clustering from the 2 methods 
 % Possibly add another method for indexing

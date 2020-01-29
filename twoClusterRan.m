@@ -90,7 +90,7 @@ parfor i = 2:N/2
     %%
     % file1 = sprintf('twoClusterN_%i_K_%g_J_%g_g1_%.2g_g2_%.2g.mat',N,K,J,gamma1,gamma2);
     % save(file1,'y_full','N');
-    index = phaseSeperation(y_full(end,:));
+    index = phaseSeparation(y_full(end,:));
     [C,pos] = centroidCal(y_full(end,:),index);
 
     % figure

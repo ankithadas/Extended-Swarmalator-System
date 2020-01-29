@@ -39,7 +39,7 @@ options = odeset('RelTol',1e-6,'AbsTol',1e-6);
 [~,y_full] = ode45(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize],y00, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
 y_full(:,dim*N + 1:end) = mod(y_full(:,dim*N + 1:end),2*pi);
 
-index = phaseSeperation(y_full(end,:));
+index = phaseSeparation(y_full(end,:));
 [centroid,pos] = centroidCal(y_full(end,:),index);
 
 minx = min(min(y_full(:,1:N)));

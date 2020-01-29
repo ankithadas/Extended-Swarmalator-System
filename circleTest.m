@@ -53,7 +53,7 @@ for i=1:timeSteps+1
     ylim([miny maxy]);
     daspect([1 1 1]); 
     % hold on
-    index = phaseSeperation(y_full(i,:));
+    index = phaseSeparation(y_full(i,:));
     [C,~] = centroidCal(y_full(i,:),index);
     dis = norm(diff(C));
     d(i) = dis;
@@ -67,7 +67,7 @@ for i=1:timeSteps+1
 end
 
 
-index = phaseSeperation(y_full(end,:));
+index = phaseSeparation(y_full(end,:));
 [C,pos] = centroidCal(y_full(end,:),index);
 dis = norm(diff(C));
 fprintf('The distance between the clusters is %.5f\n',dis);

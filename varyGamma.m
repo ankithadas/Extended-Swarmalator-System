@@ -12,7 +12,7 @@ randn(rand_init, 2);
 load('DataFiles\\swarmalator_identical_N_100_K_-0.5_J_0.8_g1_0.67_g2_-0.33.mat','y_full','options');
 clear ans
 
-% Redfine variables for code readability
+% Redefine variables for code readability
 N = 100;
 J = 0.8;
 K = -0.5;

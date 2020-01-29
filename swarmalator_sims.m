@@ -231,7 +231,7 @@ end
 % hold on 
 
 %%
-index = phaseSeperation(y_full(end,:));
+index = phaseSeparation(y_full(end,:));
 figure(3)
 gscatter(y_full(end,1:N),y_full(end,N+1:2*N),index,'bgmk');
 [C,P] = centroidCal(y_full(end,:),index);

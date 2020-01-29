@@ -108,7 +108,7 @@ for J = Jarry
         % save(file1,'y_full','N');
 
 
-        index = phaseSeperation(y_full(end,:));
+        index = phaseSeparation(y_full(end,:));
         [C,pos] = centroidCal(y_full(end,:),index);
 
         % figure
