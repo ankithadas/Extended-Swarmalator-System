@@ -56,18 +56,18 @@ function dy = swarmalator_matrixform(t,y,dim,N,w,K,J,gamma1,gamma2,varargin)
     PHIdiff = phi' - phi;
 
     % adjacency matrix for the position dynamics
-    %A_pos = (1 + J*cos(PHIdiff)).*invDis - invDis.^2;
+    A_pos = (1 + J*cos(PHIdiff)).*invDis - invDis.^2;
     
     % I_att = PTSDiff 
-    A_pos = (1 + J*cos(PHIdiff)) - invDis.^2;
+    %A_pos = (1 + J*cos(PHIdiff)) - invDis.^2;
     % phase velocities
     dy(dim*N + 1:(dim+1)*N) = w' + (K/N)*sum(invDis.*(gamma1*sin(PHIdiff) + gamma2*sin(2*PHIdiff)),2);
 
     % position velocitites
     v_pos = v + (1/N)*reshape(sum(A_pos.*PTSdiff,2),N,dim);
     dy(1:dim*N) = reshape(v_pos,dim*N,1);
-    if nargin == 10
-        dy = dy.*repmat(vars,3,1);
-    end
+%     if nargin == 10
+%         dy = dy.*repmat(vars,3,1);
+%     end
     %dy = dy + rand((dim+1)*N,1)*10^(-8);
 end

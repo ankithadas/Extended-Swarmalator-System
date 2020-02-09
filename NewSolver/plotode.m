@@ -61,7 +61,7 @@ function status = plotode(~,y,flag,varargin)
         TARGET_AXES.Colormap = hsv;
         N = length(y(:,1))/3;
         if ~isfield(ud,'ScatterPoints')
-            ud.ScatterPoints = scatter(TARGET_AXES,y(1:N,1),y(N+1:2*N,1),[],y(2*N+1:end,1));
+            ud.ScatterPoints = scatter(TARGET_AXES,y(1:N,1),y(N+1:2*N,1),[],y(2*N+1:end,1),'filled');
             colorbar(TARGET_AXES)
         else
             ud.ScatterPoints.XData = y(1:N,1);

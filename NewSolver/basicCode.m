@@ -11,7 +11,7 @@ gamma1 = 2/3;
 gamma2 = -1/3;
 dim = 2;
 stepSize = 1;
-timeSteps =1000;
+timeSteps =10000;
 y00 = rand((dim+1)*N,1);
 y00(dim*N + 1:end) = 2*pi*y00(dim*N + 1:end);
 %%
