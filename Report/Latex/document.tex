@@ -1,0 +1,132 @@
+\documentclass[twocolumn,10pt]{asme2ej}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{float}
+% \usepackage{lipsum}
+% \usepackage{mathtools}
+% \usepackage{subcaption}
+% \usepackage{relsize}
+% \usepackage{listings}
+% \usepackage{color}
+\usepackage{hyperref}
+% \usepackage{relsize}
+% \usepackage{commath}
+\usepackage{dirtytalk}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\K}{\mathbb{K}}
+
+\newcommand{\rd}{\textrm{d}}
+
+\newcommand{\bc}{\textbf{c}}
+\newcommand{\bbf}{\textbf{f}}
+\newcommand{\bg}{\textbf{g}}
+\newcommand{\bu}{\textbf{u}}
+\newcommand{\bv}{\textbf{v}}
+\newcommand{\bw}{\textbf{w}}
+\newcommand{\bx}{\textbf{x}}
+\newcommand{\by}{\textbf{y}}
+
+
+\newcommand{\diag}[1]{\textrm{diag}\left(#1\right)}
+\newcommand{\dbyd}[1]{\frac{\rd}{\rd#1}}
+\newcommand{\re}[1]{\textrm{Re}\left( #1\right)}
+\newcommand{\imag}[1]{\textrm{Im}\left( #1\right)}
+\newcommand{\trace}[1]{\textrm{tr}\left(#1\right)}
+\newcommand{\deriv}[2]{\dfrac{ d #1}{ d #2}}
+\newcommand{\fn}[1]{f_{ #1}}
+
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+%\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil} %%for ceil
+
+\title{An Extension of the Swarmalator Model}
+%%% first author
+\author{Ankith Anil Das
+    \affiliation{
+    470485327\\
+	Faculty of Science, Mathematics\\
+	The University of Sydney\\
+    Email: aani9804@uni.sydney.edu.au
+    }	
+}
+
+
+\begin{document}
+
+\maketitle    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+{
+     \it Synchronization occurs at many natural and technological systems. Such an emergent properties is observed in cardiac pacemaker cells, Japanese tree frogs, colloidal suspensions of magnetic particles, and other biological and technological systems in which synchronization interact. We consider the system where oscillators can sync and swarm. A detailed analysis was proposed by Kevin P. O'Keeffe in the paper \say{Oscillators the sync and swarm}. We studied an extended model of the Swarmalator model proposed in the paper. Understanding the dynamics of this model could possibly give insight to the generalized model where the phase coupling function could be a fourier expansion of a function. 
+}
+\end{abstract}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{nomenclature}
+% \entry{A}{You may include nomenclature here.}
+% \entry{$\alpha$}{There are two arguments for each entry of the nomemclature environment, the symbol and the definition.}
+% \end{nomenclature}
+
+% The primary text heading is  boldface and flushed left with the left margin.  The spacing between the  text and the heading is two line spaces.
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+
+\noindent
+\section{The Model}
+We consider swarmalators free to move in the plane. The governing equations are \noindent
+\begin{equation}
+    \dot{\mathbf{x}}_{i}=\mathbf{v}_{i}+\frac{1}{N} \sum_{j=1}^{N}\left[\mathbf{I}_{\mathrm{att}}\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right) F\left(\theta_{j}-\theta_{i}\right)-\mathbf{I}_{\mathrm{rep}}\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right)\right]
+\end{equation}
+\begin{equation}
+    \dot{\theta}_{i}=\omega_{i}+\frac{K}{N} \sum_{j=1}^{N} H_{\mathrm{att}}\left(\theta_{j}-\theta_{i}\right) G\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right)
+\end{equation}
+for $i = 1,...,N$, where $N$ is the number of swarmalators, $\mathbf{x}_{i} $ is the position of the $i-$th swarmalator, and $\theta_i,\omega_i,$ and $\mathbf{v}_i$ are it's phase, natural frequency and background velocity. The functions $\mathbf{I}_{att}$ and $\mathbf{I}_{rep}$ represent spatial attraction and repulsion between the swarmalators where as phase interaction is governed by $\mathbf{H}_{att}$. We considered the following model:
+\begin{equation}
+    \dot{\mathbf{x}}_{i}=\mathbf{v}_{i}+\frac{1}{N}\left[\sum_{j \neq i}^{N} \frac{\mathbf{x}_{j}-\mathbf{x}_{i}}{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|}\left(1+J \cos \left(\theta_{j}-\theta_{i}\right)\right)-\frac{\mathbf{x}_{j}-\mathbf{x}_{i}}{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|^{2}}\right]
+\end{equation}
+\begin{equation}
+    \dot{\theta}_{i}=\omega_{i}+\frac{K}{N} \sum_{j \neq i}^{N} \frac{\gamma_1 \sin \left(\theta_{j}-\theta_{i}\right) + \gamma_2 \sin \left(2 \left(\theta_j - \theta_i\right)\right) }{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|}
+\end{equation}
+We considered identical swarmalators so that $\omega_i = \omega$ and $\mathbf{v}_i = \mathbf{v}$. Using this assumption, using a suitable choice of reference frame we can set $\omega = 0$, and $\mathbf{v} = \mathbf{0}$. The system has four parameters $\left(J,K,\gamma_1,\gamma_2\right )$. 
+
+The parameter $J$ measures the extend to which phase similarity enhances spatial attraction. For $J>0$, swarmalators prefer to be near other swarmalators with similar phase. When $J<0$, the opposite behavior is observed: swarmalators attract those with opposite phase. When $J=0$, they show no phase based spatial behavior, i.e, their spatial attraction is independent of phase. To maintain $\mathbf{I}_{att} > 0$, we constrain $J$ to $-1 \leq J \leq 1$. The parameter $K$ is the phase coupling strength. It scales $\gamma_1$, and $\gamma_2$ parameters. The relative strengths of $\gamma_1$ and $\gamma_2$ determine the stability of one or two clusters. \noindent
+\section{Optimization of the ode solver}
+The simulations were run using MATLAB's ODE integrator `ode45'. Absolute and Relative tolerance for the integrator was set to $10^{-6}$. Before large computations were performed, optimization of the existing code was necessary. As this project involves computations of large matrices using ode45, reducing function call overheads would greatly reduce the computation time. The initial code was profiled using MATLAB's performance profiler and bottlenecks were identified. Calculating the pairwise inverse distance was the most expensive in the ode function. Simulations were run for $N = 100$ and for $T=10$ time units and the original code took 70 seconds. This was too slow for any long time simulations. After removing unwanted function calls, changing the algorithm, and using functions which supports vectorization, the new code took 0.509 sec for the same task. The performance was good enough for a user interactive simulation where the user can change the parameters of the system and can see the results almost instantly. 
+\section{Single Cluster Stability}
+
+
+\noindent
+\section{Two cluster Stability}
+\noindent
+\section{Periodic motion of Rogues}
+
+\section{Circular ring state}
+
+\section{Phase Variation within the clusters}
+
+\noindent
+
+\section{Simplified model}
+
+\section{Front end application}
+
+\section{Conclusion}
+
+
+\section{References}
+% CHALMERS UNIVERSITY OF TECHNOLOGY (2019). Methodology for Topology and Shape Optimization: Application to a Rear Lower Control Arm. [online] Sweden. Available at: \url{https://www.chalmers.se/SiteCollectionDocuments/Produkt-%20och%20produktionsutveckling/Nationell%20kompetensarena%20kring%20produktoptimering/Methodology_for_Topology_and_Shape_Optimization_report.pdf [Accessed 5 Nov. 2019].}
+
+\end{document}

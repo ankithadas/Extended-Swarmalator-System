@@ -115,11 +115,11 @@ end
 
 %% Loop over coupling strengths K
 tic
-options = odeset('RelTol',1e-6,'AbsTol',1e-6,'OutputFcn',@odePlotter);
+options = odeset('RelTol',1e-6,'AbsTol',1e-6);
 
 dim = 2;
 
-na = 300;
+na = 10;
 %na = 10000;
 dts = 1;
 
@@ -135,7 +135,7 @@ y00 = rand((dim+1)*N,1);
 
 y00(dim*N + 1:end) = 2*pi*y00(dim*N + 1:end);
 
-[~,y_full] = ode45(@swarmalator_matrixform, [0:dts:na*dts], y00, options, dim, N, omega, K, J, gamma1, gamma2); % replaced T with ~
+[~,y_full] = ode45(@swar_matrixOriginal, [0:dts:na*dts], y00, options, dim, N, omega, K, J, gamma1, gamma2); % replaced T with ~
 y_full(:,dim*N + 1:end) = mod(y_full(:,dim*N + 1:end),2*pi);
 toc
 %%

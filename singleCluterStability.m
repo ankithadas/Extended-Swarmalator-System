@@ -77,5 +77,3 @@ for i = 1:100
     grid on;
     hold on
 end
-
-
