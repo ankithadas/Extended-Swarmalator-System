@@ -36,8 +36,8 @@
 
 \newcommand{\diag}[1]{\textrm{diag}\left(#1\right)}
 \newcommand{\dbyd}[1]{\frac{\rd}{\rd#1}}
-\newcommand{\re}[1]{\textrm{Re}\left( #1\right)}
-\newcommand{\imag}[1]{\textrm{Im}\left( #1\right)}
+\newcommand{\re}[1]{\textrm{Re}\left(#1\right)}
+\newcommand{\imag}[1]{\textrm{Im}\left(#1\right)}
 \newcommand{\trace}[1]{\textrm{tr}\left(#1\right)}
 \newcommand{\deriv}[2]{\dfrac{ d #1}{ d #2}}
 \newcommand{\fn}[1]{f_{ #1}}
@@ -56,18 +56,18 @@
 	Faculty of Science, Mathematics\\
 	The University of Sydney\\
     Email: aani9804@uni.sydney.edu.au
-    }	
+    }
 }
 
 
 \begin{document}
 
-\maketitle    
-
+\maketitle
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 {
-     \it Synchronization occurs at many natural and technological systems. Such an emergent properties is observed in cardiac pacemaker cells, Japanese tree frogs, colloidal suspensions of magnetic particles, and other biological and technological systems in which synchronization interact. We consider the system where oscillators can sync and swarm. A detailed analysis was proposed by Kevin P. O'Keeffe in the paper \say{Oscillators the sync and swarm}. We studied an extended model of the Swarmalator model proposed in the paper. Understanding the dynamics of this model could possibly give insight to the generalized model where the phase coupling function could be a fourier expansion of a function. 
+     \it Synchronization occurs at many natural and technological systems. Such an emergent properties is observed in cardiac pacemaker cells, Japanese tree frogs, colloidal suspensions of magnetic particles, and other biological and technological systems in which synchronization interact. We consider the system where oscillators can sync and swarm. A detailed analysis was proposed by Kevin P. O'Keeffe in the paper \say{Oscillators the sync and swarm}. We studied an extended model of the Swarmalator model proposed in the paper. Understanding the dynamics of this model could possibly give insight to the generalized model where the phase coupling function could be a fourier series.
 }
 \end{abstract}
 
@@ -86,31 +86,59 @@
 
 \noindent
 \section{The Model}
-We consider swarmalators free to move in the plane. The governing equations are \noindent
-\begin{equation}
-    \dot{\mathbf{x}}_{i}=\mathbf{v}_{i}+\frac{1}{N} \sum_{j=1}^{N}\left[\mathbf{I}_{\mathrm{att}}\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right) F\left(\theta_{j}-\theta_{i}\right)-\mathbf{I}_{\mathrm{rep}}\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right)\right]
-\end{equation}
-\begin{equation}
-    \dot{\theta}_{i}=\omega_{i}+\frac{K}{N} \sum_{j=1}^{N} H_{\mathrm{att}}\left(\theta_{j}-\theta_{i}\right) G\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right)
-\end{equation}
-for $i = 1,...,N$, where $N$ is the number of swarmalators, $\mathbf{x}_{i} $ is the position of the $i-$th swarmalator, and $\theta_i,\omega_i,$ and $\mathbf{v}_i$ are it's phase, natural frequency and background velocity. The functions $\mathbf{I}_{att}$ and $\mathbf{I}_{rep}$ represent spatial attraction and repulsion between the swarmalators where as phase interaction is governed by $\mathbf{H}_{att}$. We considered the following model:
-\begin{equation}
-    \dot{\mathbf{x}}_{i}=\mathbf{v}_{i}+\frac{1}{N}\left[\sum_{j \neq i}^{N} \frac{\mathbf{x}_{j}-\mathbf{x}_{i}}{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|}\left(1+J \cos \left(\theta_{j}-\theta_{i}\right)\right)-\frac{\mathbf{x}_{j}-\mathbf{x}_{i}}{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|^{2}}\right]
-\end{equation}
-\begin{equation}
-    \dot{\theta}_{i}=\omega_{i}+\frac{K}{N} \sum_{j \neq i}^{N} \frac{\gamma_1 \sin \left(\theta_{j}-\theta_{i}\right) + \gamma_2 \sin \left(2 \left(\theta_j - \theta_i\right)\right) }{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|}
-\end{equation}
-We considered identical swarmalators so that $\omega_i = \omega$ and $\mathbf{v}_i = \mathbf{v}$. Using this assumption, using a suitable choice of reference frame we can set $\omega = 0$, and $\mathbf{v} = \mathbf{0}$. The system has four parameters $\left(J,K,\gamma_1,\gamma_2\right )$. 
+{
+    We consider swarmalators free to move in the plane. The governing equations are     \noindent
+    \begin{equation}
+        \dot{\mathbf{x}}_{i}=\mathbf{v}_{i}+\frac{1}{N} \sum_{j=1}^{N}\left[\mathbf{I}_{\mathrm{att}}\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right) F\left(\theta_{j}   -\theta_{i}\right)-\mathbf{I}_{\mathrm{rep}}\left(\mathbf{x}_{j}-\mathbf{x}_{i}    \right)\right]
+    \end{equation}
+    \begin{equation}
+        \dot{\theta}_{i}=\omega_{i}+\frac{K}{N} \sum_{j=1}^{N} H_{\mathrm{att}}\left(\theta_{j}-\theta_{i}\right) G\left(\mathbf{x}_{j}-\mathbf{x}_{i}\right)
+    \end{equation}
+    for \(i = 1,\ldots,N\), where \(N\) is the number of swarmalators, $\mathbf{x}_{i} $ is the position of the \(i\)-th swarmalator, and $\theta_i,\omega_i,$ and $\mathbf{v}_i$ are it's phase, natural frequency and background velocity. The functions $\mathbf{I}_  {att}$ and $\mathbf{I}_{rep}$ represent spatial attraction and repulsion between the swarmalators where as phase interaction is governed by $\mathbf{H}_{att}$. We considered the following model:
+    \begin{equation}
+        \dot{\mathbf{x}}_{i}=\mathbf{v}_{i}+\frac{1}{N}\left[\sum_{j \neq i}^{N} \frac  {\mathbf{x}_{j}-\mathbf{x}_{i}}{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|}\left  (1+J \cos \left(\theta_{j}-\theta_{i}\right)\right)-\frac{\mathbf{x}_{j}-\mathbf{x}_{i}}{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|^{2}}\right]
+    \end{equation}
+    \begin{equation} \label{eq:phase}
+        \dot{\theta}_{i}=\omega_{i}+\frac{K}{N} \sum_{j \neq i}^{N} \frac{\gamma_1 \sin\left(\theta_{j}-\theta_{i}\right) + \gamma_2 \sin \left(2 \left(\theta_j -\theta_i\right)\right) }{\left|\mathbf{x}_{j}-\mathbf{x}_{i}\right|} 
+    \end{equation}
+    %% State the differences of our model to the original swarmalator model 
+    We considered identical swarmalators so that $\omega_i = \omega$ and $\mathbf{v}_i = \mathbf{v}$. Using this assumption, using a suitable choice of reference frame we  can set $\omega = 0$, and $\mathbf{v} = \mathbf{0}$. The system has four parameters $\left(J,K,\gamma_1,\gamma_2\right )$.
 
-The parameter $J$ measures the extend to which phase similarity enhances spatial attraction. For $J>0$, swarmalators prefer to be near other swarmalators with similar phase. When $J<0$, the opposite behavior is observed: swarmalators attract those with opposite phase. When $J=0$, they show no phase based spatial behavior, i.e, their spatial attraction is independent of phase. To maintain $\mathbf{I}_{att} > 0$, we constrain $J$ to $-1 \leq J \leq 1$. The parameter $K$ is the phase coupling strength. It scales $\gamma_1$, and $\gamma_2$ parameters. The relative strengths of $\gamma_1$ and $\gamma_2$ determine the stability of one or two clusters. \noindent
+    The parameter \(J\) measures the extend to which phase similarity enhances spatial attraction. For $J>0$, swarmalators prefer to be near other swarmalators with  similar phase. When $J<0$, the opposite behavior is observed: swarmalators attract those with opposite phase. When $J=0$, they show no phase based spatial behavior,i.e, their spatial attraction is independent of phase. To maintain $\mathbf{I}_{att}> 0$, we constrain $J$ to $-1 \leq J \leq 1$. The parameter $K$ is the phase coupling strength which scales $\gamma_1$, and $\gamma_2$. The relative  strengths of $\gamma_1$ and $\gamma_2$ determine the stability of one or two clusters. 
+    
+    Before stating the dynamics of the system, we pause to state the features of this model. This model's purpose is to study the interplay between swarming and synchronization. Our model accounts for aggregation, but not alignment. There are no alignment terms.  We chose to neglect orientation because it adds another layer of complexity; it makes each swarmalator have four state variables. For rest of the report we will refer to our model as `Dual phase coupled model' because of the presence of double angle $\sin$ function in Eq.\ref{eq:phase}. In a similar fashion, the original model proposed by Kevin P. O'Keeffe will be referred as `Single phase coupled model'.\noindent
+}
 \section{Optimization of the ode solver}
-The simulations were run using MATLAB's ODE integrator `ode45'. Absolute and Relative tolerance for the integrator was set to $10^{-6}$. Before large computations were performed, optimization of the existing code was necessary. As this project involves computations of large matrices using ode45, reducing function call overheads would greatly reduce the computation time. The initial code was profiled using MATLAB's performance profiler and bottlenecks were identified. Calculating the pairwise inverse distance was the most expensive in the ode function. Simulations were run for $N = 100$ and for $T=10$ time units and the original code took 70 seconds. This was too slow for any long time simulations. After removing unwanted function calls, changing the algorithm, and using functions which supports vectorization, the new code took 0.509 sec for the same task. The performance was good enough for a user interactive simulation where the user can change the parameters of the system and can see the results almost instantly. 
-\section{Single Cluster Stability}
+{
+    The simulations were run using MATLAB's ODE integrator `ode45'. Absolute and Relative tolerance for the integrator was set to $10^{-6}$. Before large computations were performed, optimisation of the existing code was necessary. As this project involves computations of large matrices using ode45, optimising the code for speed was essential for any extensive calculation. The initial code was profiled using MATLAB's performance profiler, and bottlenecks were identified. Calculating the pairwise inverse distance was the most computationally expensive part in the ode function. The original code took 70 seconds for a simulation with $N = 100$ and $T = 10$-time units. This speed was too slow for any extended time simulations. After removing unwanted function calls, changing the algorithm, and using functions which supports vectorization, the new code took 0.509 sec for the same task. The performance was good enough for an interactive user simulation where the user can change the parameters of the system and can see the results almost instantly.
+}
+% \section{Single Cluster Stability}
+% {
 
+% }
 
-\noindent
-\section{Two cluster Stability}
-\noindent
+% \noindent
+% \section{Two cluster Stability}
+% {
+
+% }
+% \noindent
+
+\section{Cluster formation and stability}
+{
+    %One of the core objectives of this project was to understand the cluster formation and its stability.
+    The dynamics of dual phase coupled model had some striking differences with the original single phase model. The system not only settled in all the five states which were discussed in detail by Kevin P. O'Keeffe in single phase model, but also showed many additional stable and metastable states. Understanding the behavior of the modified phase coupling term and how it affects the formation of states could give us deep insights about the model.
+    % Maybe modify this %
+    The additional cluster states made by the model can be broadly classified as follows 
+    \begin{enumerate}[label = (\alph*)]
+        \item Two cluster state
+        \item Two cluster state with rogues 
+        \item Active 4 cluster state
+        \item Active single cluster state
+    \end{enumerate}
+    % add figures for the model%
+    
+}
 \section{Periodic motion of Rogues}
 
 \section{Circular ring state}
