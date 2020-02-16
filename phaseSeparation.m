@@ -1,9 +1,10 @@
-function [index] = phaseSeparation(numbers)
+function [index,bins] = phaseSeparation(numbers)
 
     % Location based clustering
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     X = reshape(numbers,[],3);
     phase = X(:,3);
+    phase = mod(phase,2*pi);
     % X(:,3) = [];%10*X(:,3);
 
     % avgSil = zeros(1,6);

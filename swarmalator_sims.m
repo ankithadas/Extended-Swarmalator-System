@@ -117,7 +117,7 @@ end
 tic
 options = odeset('RelTol',1e-6,'AbsTol',1e-6,'Stats','on');
 dim = 2;
-na = 10000;
+na = 80;
 %na = 10000;
 dts = 1;
 
@@ -127,15 +127,15 @@ time = dts*(1:1:na);
 K = -0.5;
 J = 0.8;
 gamma1 = 2/3;
-gamma2 = -1/3;
+gamma2 = -0.5;
 
 y00 = rand((dim+1)*N,1);
 
 y00(dim*N + 1:end) = 2*pi*y00(dim*N + 1:end);
 
 [~,y_full] = ode45(@swarmalator_matrixform, [0:dts:na*dts], y00, options, dim, N, omega, K, J, gamma1, gamma2); % replaced T with ~
-y_full(:,dim*N + 1:end) = mod(y_full(:,dim*N + 1:end),2*pi);
-toc
+%y_full(:,dim*N + 1:end) = mod(y_full(:,dim*N + 1:end),2*pi);
+ch = toc
 %%
 % minx = min(min(y_full(:,1:N)));
 % maxx = max(max(y_full(:,1:N)));
@@ -185,7 +185,7 @@ for i=2:na+1
     plot1.YData = y_full(i,N+1:2*N);
     plot1.CData = y_full(i,2*N + 1:end);
     %drawnow update
-    pause(0.01);
+    pause(0.05);
     %waitforbuttonpress;
     % file2 = sprintf('J_1.2\\fig_%05i.png',i);
     % saveas(f,file2);
@@ -236,7 +236,7 @@ end
 % hold on 
 
 %%
-index = phaseSeparation(y_full(end,:));
+[index,bins] = phaseSeparation(y_full(end,:));
 figure(3)
 gscatter(y_full(end,1:N),y_full(end,N+1:2*N),index,'bgmk');
 [C,P] = centroidCal(y_full(end,:),index);
@@ -319,4 +319,16 @@ plot(C(:,1),C(:,2),'kx');
 % %%
 
 
+%% Find phase variation with time 
+figure;
+for i = 1:N
+    plot(1:(na + 1),y_full(:,2*N + i));
+    xlim([1,35]);
+    %ylim([0 2*pi]);
+    hold on
+end
+xlabel('Time');
+ylabel('Phase \theta_i');
+phDiff = diff(bins(:,1))
+absDiff = abs(pi - phDiff)
 

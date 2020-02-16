@@ -2,10 +2,13 @@
 \BOOKMARK [1][-]{section.2}{The Model}{}% 2
 \BOOKMARK [1][-]{section.3}{Optimization of the ode solver}{}% 3
 \BOOKMARK [1][-]{section.4}{Cluster formation and stability}{}% 4
-\BOOKMARK [1][-]{section.5}{Periodic motion of Rogues}{}% 5
-\BOOKMARK [1][-]{section.6}{Circular ring state}{}% 6
-\BOOKMARK [1][-]{section.7}{Phase Variation within the clusters}{}% 7
-\BOOKMARK [1][-]{section.8}{Simplified model}{}% 8
-\BOOKMARK [1][-]{section.9}{Front end application}{}% 9
-\BOOKMARK [1][-]{section.10}{Conclusion}{}% 10
-\BOOKMARK [1][-]{section.11}{References}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Static Two cluster state}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Inter-cluster distance for Static two cluster state}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Stability of Static two cluster state}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{Periodic motion of Rogues}{}% 8
+\BOOKMARK [1][-]{section.6}{Circular ring state}{}% 9
+\BOOKMARK [1][-]{section.7}{Phase Variation within the clusters}{}% 10
+\BOOKMARK [1][-]{section.8}{Simplified model}{}% 11
+\BOOKMARK [1][-]{section.9}{Front end application}{}% 12
+\BOOKMARK [1][-]{section.10}{Conclusion}{}% 13
+\BOOKMARK [1][-]{section.11}{References}{}% 14

@@ -45,6 +45,7 @@
 \renewcommand{\labelenumii}{\theenumii}
 \renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\graphicspath{{figures/}}
 
 %\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil} %%for ceil
 
@@ -127,18 +128,56 @@
 \section{Cluster formation and stability}
 {
     %One of the core objectives of this project was to understand the cluster formation and its stability.
-    The dynamics of dual phase coupled model had some striking differences with the original single phase model. The system not only settled in all the five states which were discussed in detail by Kevin P. O'Keeffe in single phase model, but also showed many additional stable and metastable states. Understanding the behavior of the modified phase coupling term and how it affects the formation of states could give us deep insights about the model.
+    The dynamics of dual phase coupled model had some striking differences with the original single phase model. The system not only settled in all the five states which were discussed in detail by Kevin P. O'Keeffe in single phase model, but also showed many additional stable and metastable states. Understanding the behavior of the modified phase coupling term and how it affects the formation of states could give us deep insights about the generalization of the model.
     % Maybe modify this %
     The additional cluster states made by the model can be broadly classified as follows 
     \begin{enumerate}[label = (\alph*)]
-        \item Two cluster state
+        \item Static two cluster state
         \item Two cluster state with rogues 
         \item Active 4 cluster state
         \item Active single cluster state
     \end{enumerate}
     % add figures for the model%
+    \noindent
+    To understand system behavior under the change of \(\gamma_1\), and \(\gamma_2\), we chose \(J = 0.8\) and \(K = -0.5\) which represent Active phase wave in single phase coupled model. This set of state variables were chosen because it showed the most active spacial behavior in single phase coupled model and the dynamics of the system would be more depended on the values of \(\gamma_1\) and \(\gamma_2\). Unless otherwise stated, the simulations are run with \(J = 0.8\) and \(K = -0.5\). 
+    \begin{figure}[h!]
+        \includegraphics[width = \linewidth]{TwoCluster.eps}
+        \caption{Static two Cluster State}
+    \end{figure}
+    \begin{figure}[h!]
+        \includegraphics[width = \linewidth]{twoClustersWithR100.eps}
+        \caption{Two Clusters with Rogues}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \includegraphics[width = \linewidth]{ActiveSingle.eps}
+        \caption{Active Single cluster state}
+    \end{figure}
+    \begin{figure}
+        \includegraphics[width = \linewidth]{Active4Clust.eps}
+        \caption{Active 4 cluster state}
+    \end{figure}
+    %% Phase distribution in 2 cluster state. 
+    % Show a graph which shows phase with time and how it settles down.
+    % Explain why such settling is expected
+    % Discuss about the values of K J gamma1 and gamma2 values chosen for the sims 
+    % Point out that a detailed explanation for the chosen gamma1 and gamma2 values will be discussed in the later section. 
+    % Make a code to find the jacobian matrix and look at the stability of the system
     
+    \subsection{Static Two cluster state}
+    {
+        
+    }
+    \subsection{Inter-cluster distance for Static two cluster state}
+    {
+        By making a few assumptions, we can estimate the inter-cluster distance for static two cluster state. 
+    }
+    \subsection{Stability of Static two cluster state}
+    {
+
+    }
 }
+
 \section{Periodic motion of Rogues}
 
 \section{Circular ring state}
