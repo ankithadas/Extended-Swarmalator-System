@@ -15,6 +15,9 @@
 % \usepackage{relsize}
 % \usepackage{commath}
 \usepackage{dirtytalk}
+\usepackage{titlesec}
+\usepackage{relsize}
+\usepackage{amsmath}
 
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\I}{\mathbb{I}}
@@ -47,6 +50,13 @@
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 \graphicspath{{figures/}}
 
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+% \titlespacing{\section}{0pt}{\parskip}{-\parskip}
+% \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+% \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+\newcommand{\squeezeup}{\vspace{-3mm}}
 %\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil} %%for ceil
 
 \title{An Extension of the Swarmalator Model}
@@ -139,16 +149,18 @@
     \end{enumerate}
     % add figures for the model%
     \noindent
-    To understand system behavior under the change of \(\gamma_1\), and \(\gamma_2\), we chose \(J = 0.8\) and \(K = -0.5\) which represent Active phase wave in single phase coupled model. This set of state variables were chosen because it showed the most active spacial behavior in single phase coupled model and the dynamics of the system would be more depended on the values of \(\gamma_1\) and \(\gamma_2\). Unless otherwise stated, the simulations are run with \(J = 0.8\) and \(K = -0.5\). 
+    To understand system behavior under the change of \(\gamma_1\), and \(\gamma_2\), we chose \(J = 0.8\) and \(K = -0.5\) which represent Active phase wave in single phase coupled model. This set of state variables were chosen because it showed the most active spacial behavior in single phase coupled model and the dynamics of the system would be more depended on the values of \(\gamma_1\) and \(\gamma_2\). Unless otherwise stated, the simulations are run with \(J = 0.8\) and \(K = -0.5\). Also, all the simulations were run with random initial position in a 1x1 box and phases from \([-\pi, \pi]\), both uniformly and random. To maintain consistency, the same random seed was used for all simulations.
+    \squeezeup
     \begin{figure}[h!]
         \includegraphics[width = \linewidth]{TwoCluster.eps}
-        \caption{Static two Cluster State}
+        \caption{Static two Cluster State. This state was achieved for \(N = 100\), \(\gamma_1 = 1/3\), and \(\gamma_2 = -0.5\). The simulation was run for \(T = 100\) time steps with variable step-size (ode45) for the system to settle down.}
+        \vspace{-12mm}
+        \label{fig:static2}
     \end{figure}
     \begin{figure}[h!]
         \includegraphics[width = \linewidth]{twoClustersWithR100.eps}
         \caption{Two Clusters with Rogues}
     \end{figure}
-
     \begin{figure}[h!]
         \includegraphics[width = \linewidth]{ActiveSingle.eps}
         \caption{Active Single cluster state}
@@ -163,14 +175,66 @@
     % Discuss about the values of K J gamma1 and gamma2 values chosen for the sims 
     % Point out that a detailed explanation for the chosen gamma1 and gamma2 values will be discussed in the later section. 
     % Make a code to find the jacobian matrix and look at the stability of the system
-    
     \subsection{Static Two cluster state}
     {
-        
+        \noindent
+        Static two cluster case is a very common equilibrium state seen for various values of \((J,K,\gamma_1,\gamma_2)\), illustrated in  Fig.\ref{fig:static2}. Since \(J > 0\), `like attracts like': swarmalators want to settle near other swarmalators with similar phase. Looking at phase dynamics equation (Eq.\ref{eq:phase}) \(\dot{\theta}_{i} = 0\) when \(\theta_i = C, C + \pi \), where \(C\) is any constant. Due to the presence of a new stable phase, the system can form two clusters with \(\pi\) phase difference. Now for the given value of \(K\) which is less than 0, \(\gamma_1 > 0\) (Some coupling) implies the system does not prefer single cluster state, and \(\gamma_2 < 0\) (other coupling) means the system prefers to stabilize in two cluster state. Furthermore, \(|\gamma_2| > |\gamma_1|\) shows that the second coupling term in Eq.\ref*{eq:phase} is more dominant in stabilizing the system. Fig.\ref{fig:phasevsTime} shows how the phase settles with time. Here, the phase effectively stabilizes to two values after taking mod \(2\pi\). The average cluster phase difference is approximately \(\pi\) with an absolute error \(\epsilon \approx 2.6074 \times 10^{-9}\). Our statement about two cluster phase difference can be confirmed with the small error. 
+
+        \begin{figure}
+            \includegraphics[width = \linewidth]{phasevstimeN_100.eps}
+            \caption{Phase of the Swarmalator vs Time. }
+            \label{fig:phasevsTime}
+        \end{figure}
     }
+    
     \subsection{Inter-cluster distance for Static two cluster state}
     {
-        By making a few assumptions, we can estimate the inter-cluster distance for static two cluster state. 
+        We can analytically solve the inter-cluster distance for static two cluster state by making an assumption.
+        Let,
+        \begin{align} %% Fix this stupid sum SIghISHFISHFOA
+            \mathbf{C}_0 = \frac{1}{N_0} \mathlarger{\mathlarger{\sum}}_{i \in S_0 } \mathbf{x}_i &&\text{and}&& \mathbf{C}_\pi = \frac{1}{N_\pi} \mathlarger{\mathlarger{\sum}}_{i \in S_\pi } \mathbf{x}_i ,
+        \end{align}
+        where \(\mathbf{C}_0\) and \(\mathbf{C}_\pi\) are the centroids of the clusters with average phase approximately equal to \(0\) and \(\pi\) respectively , and \(S_0\) and \(S_\pi\) are the respective clusters. Differentiating \(\mathbf{C}_0\) w.r.t time gives 
+        \begin{multline*}
+            N_0 \dot{\mathbf{C}}_0 = \sum_{i \in S_0} \dot{\mathbf{x}}_i = \sum_{i \in S_0} \left(\sum_{j=1}^N \frac{\mathbf{x}_j - \mathbf{x}_i}{|\mathbf{x}_j - \mathbf{x}_i|} \left(1 + J \cos (\theta_j - \theta_i)\right) - \frac{\mathbf{x}_j - \mathbf{x}_i}{|\mathbf{x}_j - \mathbf{x}_i|^2}\right) \\
+            = \sum_{i \in S_0} \left(\underbrace{\sum_{j \in S_0} \left(\frac{\mathbf{x}_j - \mathbf{x}_i}{|\mathbf{x}_j - \mathbf{x}_i|} \left(1 + J \right) - \frac{\mathbf{x}_j - \mathbf{x}_i}{|\mathbf{x}_j - \mathbf{x}_i|^2}\right) }_{\text{=0,since pair wise cancellation}} + \sum_{j \in S_\pi} \left(\frac{\mathbf{x}_j - \mathbf{x}_i}{|\mathbf{x}_j - \mathbf{x}_i|} \left(1 + J \right) - \frac{\mathbf{x}_j - \mathbf{x}_i}{|\mathbf{x}_j - \mathbf{x}_i|^2}\right)\right) \\
+            = \sum_{i \in S_0} \sum_{j \in S_\pi} \frac{\mathbf{x}_j - \mathbf{x}_i}{|\mathbf{x}_j - \mathbf{x}_i|^2} \left((1+J) |\mathbf{x}_j - \mathbf{x}_i| - 1\right)
+        \end{multline*}
+        We will make the assumption that \(|\mathbf{x}_j - \mathbf{x}_i| \approx |\mathbf{C}_0 - \mathbf{C}_\pi| = r\) (say). Then
+        \begin{align*}
+            N_0 \dot{\mathbf{C}}_0 &\approx \sum_{i \in S_0} \sum_{j \in S_\pi} \frac{\mathbf{x}_j - \mathbf{x}_i}{r^2} \left((1+J) r - 1\right) \\
+            &= \frac{(1+J) r - 1}{r^2} \left(\sum_{i \in S_0} \sum_{j \in S_\pi} \mathbf{x}_j - \mathbf{x}_i\right)
+        \end{align*}
+        \begin{align}
+            \dot{\mathbf{C}}_0 &= N_\pi \frac{(1+J) r - 1}{r^2} (\mathbf{C}_\pi - \mathbf{C}_0).
+        \end{align}
+        Using similar arguments we can also find \(\dot{\mathbf{C}}_\pi\) ,
+        \begin{align}
+            \dot{\mathbf{C}}_\pi &= N_0 \frac{(1+J) r - 1}{r^2} (\mathbf{C}_0 - \mathbf{C}_\pi).
+        \end{align}
+        Finally,
+        \begin{align*}
+            \dot{\mathbf{C}}_0 - \dot{\mathbf{C}}_\pi &= -N \left(\frac{(1-J)r -1}{r^2}\right)(\mathbf{C}_0 - \mathbf{C}_\pi) \\
+        \end{align*}
+        \begin{align}\label{eq:diffdist}
+            \Rightarrow \dfrac{dr}{dt} &= -N \left(\frac{(1-J)r -1}{r}\right).
+        \end{align}
+        Equating Eq.\ref*{eq:diffdist} to zero gives the equilibrium distance between the cluster,
+        \begin{equation}\label{eq:eqdist}
+            r^* = \frac{1}{1-J}
+        \end{equation} % please check this with supervisor 
+        Surprisingly but yet obvious, the inter-cluster distance is independent of \(N,K,\gamma_1\),and \(\gamma_2\). To verify our analytical solution, simulations were run for various values of \(N\) and \(K\) and the results are shown in Fig.\ref{fig:dvn} and Fig.\ref{fig:KvJ}
+        \begin{figure}[h!]
+            \includegraphics[width = \linewidth]{dvn.eps}
+            \caption{Inter-cluster distance for static two cluster state. Simulations were run for various values of \(N\) with \(K = -0.5,J = 0.3,\gamma_1 = 2/3,\gamma_1 = -1/3\). Swarmalators were initially positioned in two equally sized clusters with average phase \(0\) and \(\pi\) and simualtions were run for \(T = 300\) time steps.}
+            \label{fig:dvn}
+        \end{figure}
+        \begin{figure}[h!]
+            \includegraphics[width = \linewidth]{interClust.eps}
+            \caption{Inter-cluster distance for varying K. Simulations were run for various values of \(K\) and \(J\) for \(N = 800\). The black line shows the theoretical prediction as per Eq.\ref{eq:eqdist}. The figure justifies that inter-cluster distance is independent of \(K\).}
+            \label{fig:KvJ}
+        \end{figure}
+        Also, from Eq.\ref*{eq:eqdist}, we realize that for \(J \geq 1\) the two clusters move to infinity. 
     }
     \subsection{Stability of Static two cluster state}
     {
@@ -181,6 +245,9 @@
 \section{Periodic motion of Rogues}
 
 \section{Circular ring state}
+{
+    In a search for more stable states, we encountered a possibly stable state which could be achieved with careful arrangement of swarmalators. It can be achieved by placing a swarmalators around a circle with a single swarmalator in the center. The circumferential swarmalators have phase \(\pi\) off from the center. 
+}
 
 \section{Phase Variation within the clusters}
 

@@ -16,7 +16,7 @@ dim = 2;
 stepSize = 1;
 timeSteps = 100;
 reset(RandStream.getGlobalStream,1);
-n = 5;
+n = 10;
 r = 1;
 theta = linspace(0, 2*pi,n+1);
 theta(end) = [];

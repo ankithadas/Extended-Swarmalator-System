@@ -185,7 +185,7 @@ for i=2:na+1
     plot1.YData = y_full(i,N+1:2*N);
     plot1.CData = y_full(i,2*N + 1:end);
     %drawnow update
-    pause(0.05);
+    %pause(0.05);
     %waitforbuttonpress;
     % file2 = sprintf('J_1.2\\fig_%05i.png',i);
     % saveas(f,file2);
@@ -321,14 +321,20 @@ plot(C(:,1),C(:,2),'kx');
 
 %% Find phase variation with time 
 figure;
+ax = axes;
 for i = 1:N
     plot(1:(na + 1),y_full(:,2*N + i));
     xlim([1,35]);
     %ylim([0 2*pi]);
     hold on
 end
+ax.TickLabelInterpreter = 'latex';
+ax.YTickLabel = {'$0$','$\frac{\pi}{2}$','$\pi$','$\frac{3\pi}{2}$','$2\pi$','$\frac{5\pi}{2}$'}
+ax.YTick = 0:pi/2:5*pi/2;
+ax.FontSize = 12;
 xlabel('Time');
 ylabel('Phase \theta_i');
 phDiff = diff(bins(:,1))
 absDiff = abs(pi - phDiff)
+
 
