@@ -86,17 +86,24 @@ end
 %%    
 
 f = figure(3);
+cmin = min(y_new(:,2*N+1:end),[],'all');
+cmax = max(y_new(:,2*N+1:end),[],'all');
 for i=1:timeSteps+1
-    colormap('jet');
-    scatter(y_full(i,1:N),y_full(i,N+1:2*N),[],y_full(i,2*N+1:end)),colorbar;
-    caxis([0 2*pi]);
+    colormap(jet(256));
+    scatter(y_new(i,1:N),y_new(i,N+1:2*N),[],y_new(i,2*N+1:end),'filled'),colorbar;
+    caxis([-0.15 0.15]);
     xlim([minx maxx]);
     ylim([miny maxy]);
+    box on;
+    xlabel('x');
+    ylabel('y');
     daspect([1 1 1]); 
     %pause(0.05) 
-    %waitforbuttonpress;
-    file2 = sprintf('PhaseVar\\ori_%05i.png',i);
-    saveas(f,file2);
+    if i == 100
+        waitforbuttonpress;
+    end
+    %file2 = sprintf('PhaseVar\\ori_%05i.png',i);
+    %saveas(f,file2);
 end
 %%
 save('PhaseVariationsInClusters.mat');

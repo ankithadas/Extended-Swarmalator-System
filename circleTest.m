@@ -17,7 +17,7 @@ stepSize = 1;
 timeSteps = 100;
 reset(RandStream.getGlobalStream,1);
 n = 10;
-r = 1;
+r = 0.5;
 theta = linspace(0, 2*pi,n+1);
 theta(end) = [];
 x = r*cos(theta)';
@@ -95,3 +95,34 @@ title('Distance vs time');
 xlabel('Time');
 ylabel('Distance')
 grid on
+
+%%
+figure 
+colormap('hsv');
+scatter(y00(1:N),y00(N+1:2*N),[],y00(2*N+1:end),'filled');
+box on;
+obj = colorbar;
+obj.TickLabelInterpreter = 'latex';
+obj.XTickLabel = {'$0$','$\frac{\pi}{4}$','$\frac{\pi}{2}$','$\frac{3\pi}{4}$','$\pi$','$\frac{5\pi}{4}$','$\frac{3\pi}{2}$','$\frac{7\pi}{4}$','$2\pi$'};
+obj.XTick = 0:pi/4:2*pi;
+obj.FontSize = 13;
+caxis([0 2*pi]);
+daspect([1 1 1]); 
+xlim([-1 1]);
+ylim([-1 1]);
+xlabel('x');
+ylabel('y');
+
+%% Change in radius 
+dist = zeros(1,timeSteps+1);
+for i = 1:timeSteps+1
+    pos = reshape(y_full(i,:),[],3);
+    pos(end,:) = [];
+    dist(i) = mean(vecnorm(pos(:,1:2),2,2));
+end
+figure 
+plot(1:timeSteps+1,dist,'LineWidth',1.5);
+axis tight
+grid on;
+xlabel('Time');
+ylabel('Average radius of circular arrangment');

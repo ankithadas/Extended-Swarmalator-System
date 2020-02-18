@@ -117,7 +117,7 @@ end
 tic
 options = odeset('RelTol',1e-6,'AbsTol',1e-6,'Stats','on');
 dim = 2;
-na = 80;
+na = 1000;
 %na = 10000;
 dts = 1;
 
@@ -127,7 +127,7 @@ time = dts*(1:1:na);
 K = -0.5;
 J = 0.8;
 gamma1 = 2/3;
-gamma2 = -0.5;
+gamma2 = -1/3;
 
 y00 = rand((dim+1)*N,1);
 
@@ -171,21 +171,28 @@ miny = min(y_full(:,N+1:2*N),[],'all');
 maxy = max(y_full(:,N+1:2*N),[],'all');
 %f = figure('visible','off');
 figure(2);
-colormap('hsv');
+colormap(hsv(256));
 ax = axes;
-ax.XLim = [minx maxx];
-ax.YLim = [miny maxy];
+ax.XLim = [minx-0.5 maxx+0.5];
+ax.YLim = [miny-0.5 maxy+0.5];
 ax.NextPlot = 'add';
-plot1 = scatter(y_full(1,1:N),y_full(1,N+1:2*N),[],y_full(1,2*N+1:end));
+plot1 = scatter(y_full(1,1:N),y_full(1,N+1:2*N),[],y_full(1,2*N+1:end),'filled');
 caxis([0 2*pi]);
 daspect([1 1 1]);
-colorbar;
+obj = colorbar;
+obj.TickLabelInterpreter = 'latex';
+obj.XTickLabel = {'$0$','$\frac{\pi}{4}$','$\frac{\pi}{2}$','$\frac{3\pi}{4}$','$\pi$','$\frac{5\pi}{4}$','$\frac{3\pi}{2}$','$\frac{7\pi}{4}$','$2\pi$'};
+obj.XTick = 0:pi/4:2*pi;
+obj.FontSize = 13;
+box on;
+xlabel('x');
+ylabel('y');
 for i=2:na+1
     plot1.XData = y_full(i,1:N);
     plot1.YData = y_full(i,N+1:2*N);
     plot1.CData = y_full(i,2*N + 1:end);
     %drawnow update
-    %pause(0.05);
+    pause(0.05);
     %waitforbuttonpress;
     % file2 = sprintf('J_1.2\\fig_%05i.png',i);
     % saveas(f,file2);
@@ -324,12 +331,12 @@ figure;
 ax = axes;
 for i = 1:N
     plot(1:(na + 1),y_full(:,2*N + i));
-    xlim([1,35]);
+    xlim([1,inf]);
     %ylim([0 2*pi]);
     hold on
 end
 ax.TickLabelInterpreter = 'latex';
-ax.YTickLabel = {'$0$','$\frac{\pi}{2}$','$\pi$','$\frac{3\pi}{2}$','$2\pi$','$\frac{5\pi}{2}$'}
+ax.YTickLabel = {'$0$','$\frac{\pi}{2}$','$\pi$','$\frac{3\pi}{2}$','$2\pi$','$\frac{5\pi}{2}$'};
 ax.YTick = 0:pi/2:5*pi/2;
 ax.FontSize = 12;
 xlabel('Time');

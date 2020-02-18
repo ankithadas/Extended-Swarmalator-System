@@ -193,6 +193,15 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCl
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
@@ -220,8 +229,6 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Activ
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
@@ -282,6 +289,8 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn.eps
@@ -300,6 +309,42 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/inter
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClust-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClust-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClust-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf
 INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zpsycmrv.vf
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
@@ -328,6 +373,15 @@ INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.aux
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.out
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.out

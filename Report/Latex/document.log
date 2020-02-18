@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.9)  18 FEB 2020 10:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.9)  18 FEB 2020 20:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -411,11 +411,25 @@ Package epstopdf Info: Source file: <figures/TwoCluster.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/TwoCluster-eps-converted-to.pdf figures/TwoCluster.eps>
 (epstopdf)             \includegraphics on input line 155.
 Package epstopdf Info: Output file is already uptodate.
-<figures/TwoCluster-eps-converted-to.pdf, id=80, 351.3125pt x 235.88126pt>
+<figures/TwoCluster-eps-converted-to.pdf, id=84, 351.3125pt x 235.88126pt>
 File: figures/TwoCluster-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/TwoCluster-eps-converted-to.pdf>
 Package pdftex.def Info: figures/TwoCluster-eps-converted-to.pdf  used on input line 155.
 (pdftex.def)             Requested size: 241.38208pt x 162.07437pt.
+Package epstopdf Info: Source file: <figures/staticSingleClusterState.eps>
+(epstopdf)                    date: 2020-02-18 18:07:24
+(epstopdf)                    size: 83410 bytes
+(epstopdf)             Output file: <figures/staticSingleClusterState-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-18 18:10:40
+(epstopdf)                    size: 29633 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/staticSingleClusterState-eps-converted-to.pdf figures/staticSingleClusterState.eps>
+(epstopdf)             \includegraphics on input line 161.
+Package epstopdf Info: Output file is already uptodate.
+<figures/staticSingleClusterState-eps-converted-to.pdf, id=85, 327.2225pt x 290.08376pt>
+File: figures/staticSingleClusterState-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/staticSingleClusterState-eps-converted-to.pdf>
+Package pdftex.def Info: figures/staticSingleClusterState-eps-converted-to.pdf  used on input line 161.
+(pdftex.def)             Requested size: 241.38208pt x 213.98581pt.
 Package epstopdf Info: Source file: <figures/twoClustersWithR100.eps>
 (epstopdf)                    date: 2020-02-16 11:10:20
 (epstopdf)                    size: 83927 bytes
@@ -423,12 +437,12 @@ Package epstopdf Info: Source file: <figures/twoClustersWithR100.eps>
 (epstopdf)                    date: 2020-02-16 11:12:49
 (epstopdf)                    size: 29971 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/twoClustersWithR100-eps-converted-to.pdf figures/twoClustersWithR100.eps>
-(epstopdf)             \includegraphics on input line 161.
+(epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
-<figures/twoClustersWithR100-eps-converted-to.pdf, id=81, 352.31625pt x 196.735pt>
+<figures/twoClustersWithR100-eps-converted-to.pdf, id=86, 352.31625pt x 196.735pt>
 File: figures/twoClustersWithR100-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/twoClustersWithR100-eps-converted-to.pdf>
-Package pdftex.def Info: figures/twoClustersWithR100-eps-converted-to.pdf  used on input line 161.
+Package pdftex.def Info: figures/twoClustersWithR100-eps-converted-to.pdf  used on input line 166.
 (pdftex.def)             Requested size: 241.38208pt x 134.78966pt.
 Package epstopdf Info: Source file: <figures/ActiveSingle.eps>
 (epstopdf)                    date: 2020-02-16 11:09:28
@@ -437,12 +451,12 @@ Package epstopdf Info: Source file: <figures/ActiveSingle.eps>
 (epstopdf)                    date: 2020-02-16 11:12:51
 (epstopdf)                    size: 31045 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/ActiveSingle-eps-converted-to.pdf figures/ActiveSingle.eps>
-(epstopdf)             \includegraphics on input line 165.
+(epstopdf)             \includegraphics on input line 170.
 Package epstopdf Info: Output file is already uptodate.
-<figures/ActiveSingle-eps-converted-to.pdf, id=82, 330.23375pt x 289.08pt>
+<figures/ActiveSingle-eps-converted-to.pdf, id=87, 330.23375pt x 289.08pt>
 File: figures/ActiveSingle-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/ActiveSingle-eps-converted-to.pdf>
-Package pdftex.def Info: figures/ActiveSingle-eps-converted-to.pdf  used on input line 165.
+Package pdftex.def Info: figures/ActiveSingle-eps-converted-to.pdf  used on input line 170.
 (pdftex.def)             Requested size: 241.38208pt x 211.30894pt.
 Package epstopdf Info: Source file: <figures/Active4Clust.eps>
 (epstopdf)                    date: 2020-02-15 14:44:57
@@ -451,21 +465,17 @@ Package epstopdf Info: Source file: <figures/Active4Clust.eps>
 (epstopdf)                    date: 2020-02-15 14:45:36
 (epstopdf)                    size: 31836 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/Active4Clust-eps-converted-to.pdf figures/Active4Clust.eps>
-(epstopdf)             \includegraphics on input line 169.
+(epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
-<figures/Active4Clust-eps-converted-to.pdf, id=83, 356.33125pt x 175.65625pt>
+<figures/Active4Clust-eps-converted-to.pdf, id=88, 356.33125pt x 175.65625pt>
 File: figures/Active4Clust-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/Active4Clust-eps-converted-to.pdf>
-Package pdftex.def Info: figures/Active4Clust-eps-converted-to.pdf  used on input line 169.
+Package pdftex.def Info: figures/Active4Clust-eps-converted-to.pdf  used on input line 174.
 (pdftex.def)             Requested size: 241.38208pt x 118.99168pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/phasevstimeN_100.eps>
 (epstopdf)                    date: 2020-02-16 16:24:57
 (epstopdf)                    size: 131607 bytes
@@ -473,32 +483,32 @@ Package epstopdf Info: Source file: <figures/phasevstimeN_100.eps>
 (epstopdf)                    date: 2020-02-16 16:25:53
 (epstopdf)                    size: 39075 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/phasevstimeN_100-eps-converted-to.pdf figures/phasevstimeN_100.eps>
-(epstopdf)             \includegraphics on input line 184.
+(epstopdf)             \includegraphics on input line 189.
 Package epstopdf Info: Output file is already uptodate.
-<figures/phasevstimeN_100-eps-converted-to.pdf, id=127, 363.3575pt x 284.06125pt>
+<figures/phasevstimeN_100-eps-converted-to.pdf, id=92, 363.3575pt x 284.06125pt>
 File: figures/phasevstimeN_100-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/phasevstimeN_100-eps-converted-to.pdf>
-Package pdftex.def Info: figures/phasevstimeN_100-eps-converted-to.pdf  used on input line 184.
+Package pdftex.def Info: figures/phasevstimeN_100-eps-converted-to.pdf  used on input line 189.
 (pdftex.def)             Requested size: 241.38208pt x 188.70763pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 201.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 201.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 201.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 201.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 201.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 196.
-
-Overfull \hbox (44.19342pt too wide) detected at line 202
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 201.
+[2 <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf>]
+Overfull \hbox (44.19342pt too wide) detected at line 207
  []$[]  \OML/ptmcm/m/it/10 N[][] \OT1/ptmcm/m/n/10 = [] [] = [] []$ 
  []
 
 
-Overfull \hbox (103.16481pt too wide) detected at line 202
+Overfull \hbox (103.16481pt too wide) detected at line 207
  []$[] \OT1/ptmcm/m/n/10 = [] []$ 
  []
 
@@ -509,12 +519,12 @@ Package epstopdf Info: Source file: <figures/dvn.eps>
 (epstopdf)                    date: 2020-02-17 13:30:14
 (epstopdf)                    size: 18997 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/dvn-eps-converted-to.pdf figures/dvn.eps>
-(epstopdf)             \includegraphics on input line 228.
+(epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
-<figures/dvn-eps-converted-to.pdf, id=130, 489.83pt x 375.4025pt>
+<figures/dvn-eps-converted-to.pdf, id=129, 489.83pt x 375.4025pt>
 File: figures/dvn-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/dvn-eps-converted-to.pdf>
-Package pdftex.def Info: figures/dvn-eps-converted-to.pdf  used on input line 228.
+Package pdftex.def Info: figures/dvn-eps-converted-to.pdf  used on input line 229.
 (pdftex.def)             Requested size: 241.38208pt x 184.99136pt.
 Package epstopdf Info: Source file: <figures/interClust.eps>
 (epstopdf)                    date: 2020-02-17 17:05:59
@@ -523,12 +533,12 @@ Package epstopdf Info: Source file: <figures/interClust.eps>
 (epstopdf)                    date: 2020-02-17 17:06:22
 (epstopdf)                    size: 21042 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/interClust-eps-converted-to.pdf figures/interClust.eps>
-(epstopdf)             \includegraphics on input line 233.
+(epstopdf)             \includegraphics on input line 234.
 Package epstopdf Info: Output file is already uptodate.
-<figures/interClust-eps-converted-to.pdf, id=131, 366.36874pt x 291.0875pt>
+<figures/interClust-eps-converted-to.pdf, id=130, 366.36874pt x 291.0875pt>
 File: figures/interClust-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/interClust-eps-converted-to.pdf>
-Package pdftex.def Info: figures/interClust-eps-converted-to.pdf  used on input line 233.
+Package pdftex.def Info: figures/interClust-eps-converted-to.pdf  used on input line 234.
 (pdftex.def)             Requested size: 241.38208pt x 191.7852pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -536,31 +546,114 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
-[3 <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf>] [4
+Package epstopdf Info: Source file: <figures/circleArrangment.eps>
+(epstopdf)                    date: 2020-02-18 11:29:08
+(epstopdf)                    size: 67572 bytes
+(epstopdf)             Output file: <figures/circleArrangment-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-18 11:29:14
+(epstopdf)                    size: 24715 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/circleArrangment-eps-converted-to.pdf figures/circleArrangment.eps>
+(epstopdf)             \includegraphics on input line 256.
+Package epstopdf Info: Output file is already uptodate.
+<figures/circleArrangment-eps-converted-to.pdf, id=137, 325.215pt x 290.08376pt>
+File: figures/circleArrangment-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/circleArrangment-eps-converted-to.pdf>
+Package pdftex.def Info: figures/circleArrangment-eps-converted-to.pdf  used on input line 256.
+(pdftex.def)             Requested size: 241.38208pt x 215.3137pt.
+Package epstopdf Info: Source file: <figures/radiiVtime.eps>
+(epstopdf)                    date: 2020-02-18 11:05:51
+(epstopdf)                    size: 60568 bytes
+(epstopdf)             Output file: <figures/radiiVtime-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-18 11:06:16
+(epstopdf)                    size: 21329 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/radiiVtime-eps-converted-to.pdf figures/radiiVtime.eps>
+(epstopdf)             \includegraphics on input line 261.
+Package epstopdf Info: Output file is already uptodate.
+<figures/radiiVtime-eps-converted-to.pdf, id=138, 369.38pt x 286.06876pt>
+File: figures/radiiVtime-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/radiiVtime-eps-converted-to.pdf>
+Package pdftex.def Info: figures/radiiVtime-eps-converted-to.pdf  used on input line 261.
+(pdftex.def)             Requested size: 241.38208pt x 186.93771pt.
+Package epstopdf Info: Source file: <figures/centerDistVtime.eps>
+(epstopdf)                    date: 2020-02-18 12:05:57
+(epstopdf)                    size: 56496 bytes
+(epstopdf)             Output file: <figures/centerDistVtime-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-18 12:06:10
+(epstopdf)                    size: 19804 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/centerDistVtime-eps-converted-to.pdf figures/centerDistVtime.eps>
+(epstopdf)             \includegraphics on input line 266.
+Package epstopdf Info: Output file is already uptodate.
+<figures/centerDistVtime-eps-converted-to.pdf, id=139, 393.47pt x 289.08pt>
+File: figures/centerDistVtime-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/centerDistVtime-eps-converted-to.pdf>
+Package pdftex.def Info: figures/centerDistVtime-eps-converted-to.pdf  used on input line 266.
+(pdftex.def)             Requested size: 241.38208pt x 177.33983pt.
+Package epstopdf Info: Source file: <figures/centerDistVtimeError.eps>
+(epstopdf)                    date: 2020-02-18 12:42:35
+(epstopdf)                    size: 69918 bytes
+(epstopdf)             Output file: <figures/centerDistVtimeError-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-18 12:42:51
+(epstopdf)                    size: 21393 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/centerDistVtimeError-eps-converted-to.pdf figures/centerDistVtimeError.eps>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+<figures/centerDistVtimeError-eps-converted-to.pdf, id=140, 390.45876pt x 286.06876pt>
+File: figures/centerDistVtimeError-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/centerDistVtimeError-eps-converted-to.pdf>
+Package pdftex.def Info: figures/centerDistVtimeError-eps-converted-to.pdf  used on input line 271.
+(pdftex.def)             Requested size: 241.38208pt x 176.85008pt.
+[3 <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf>]
 
- <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClust-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4 <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClust-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/phaseVar.eps>
+(epstopdf)                    date: 2020-02-18 13:44:01
+(epstopdf)                    size: 122471 bytes
+(epstopdf)             Output file: <figures/phaseVar-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-02-18 13:44:28
+(epstopdf)                    size: 39691 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/phaseVar-eps-converted-to.pdf figures/phaseVar.eps>
+(epstopdf)             \includegraphics on input line 286.
+Package epstopdf Info: Output file is already uptodate.
+<figures/phaseVar-eps-converted-to.pdf, id=205, 326.21875pt x 284.06125pt>
+File: figures/phaseVar-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/phaseVar-eps-converted-to.pdf>
+Package pdftex.def Info: figures/phaseVar-eps-converted-to.pdf  used on input line 286.
+(pdftex.def)             Requested size: 241.38208pt x 210.19334pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
+
+Underfull \vbox (badness 5288) has occurred while \output is active []
+
+ [5 <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf> <c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 4791F6A33578F2F04A161B19B65CDEF4;869.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
+(rerunfilecheck)             Checksum: 50D99882ADECF4EB9F78F7096F556366;930.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 7037 strings out of 492649
- 101834 string characters out of 6133385
- 204486 words of memory out of 5000000
- 10743 multiletter control sequences out of 15000+600000
+ 7084 strings out of 492649
+ 103493 string characters out of 6133385
+ 209921 words of memory out of 5000000
+ 10775 multiletter control sequences out of 15000+600000
  64968 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 33i,20n,31p,1366b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,20n,31p,1695b,395s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.pdf" (4 pages, 300385 bytes).
+Output written on "c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.pdf" (5 pages, 447308 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
