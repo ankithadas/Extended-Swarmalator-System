@@ -6,7 +6,7 @@ rand_init = 76599;
 randn(rand_init,2);  %% Discouraged syntax for randn 
 clear rand_init
 
-N = 200;
+N = 100;
 tic
 options = odeset('RelTol',1e-6,'AbsTol',1e-6);
 
@@ -58,12 +58,16 @@ miny = min(min(y_full(:,N+1:2*N)));
 maxy = max(max(y_full(:,N+1:2*N)));
 y_reshaped = reshape(y_full,1001,[],3);
 
-y_data = y_reshaped(:,end-13:end,1:2);
-
-for i = 1:14
+y_data = y_reshaped(:,end-5:end,1:2);
+color = 'rgbcmk';
+for i = 1:6
     data = squeeze(y_data(:,i,1:2));
     figure
-    plot(data(:,1),data(:,2));
-    title(sprintf('Particle motion %d',i));
+    plot(data(:,1),data(:,2),color(i));
+    %title(sprintf('Particle motion %d',i));
+    xlabel('x');
+    ylabel('y');
+    %hold on
     %axis([minx maxx miny maxy]);
 end
+%legend('1','2','3','4','5','6');

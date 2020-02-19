@@ -27,7 +27,7 @@ fig4 = makeFig(fileName4,ti);
 fig4.Visible = 'On';
 
 fileName5 = 'gamma1_0.67_gamma2_-0.5_N_100_K_-0.5_J_0.8.mat';
-ti = '';
+ti = 'Two clusters';
 
 fig5 = makeFig(fileName5,ti);
 fig5.Visible = 'On';

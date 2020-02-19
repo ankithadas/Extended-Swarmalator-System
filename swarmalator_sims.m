@@ -117,7 +117,7 @@ end
 tic
 options = odeset('RelTol',1e-6,'AbsTol',1e-6,'Stats','on');
 dim = 2;
-na = 1000;
+na = 100;
 %na = 10000;
 dts = 1;
 
@@ -343,5 +343,10 @@ xlabel('Time');
 ylabel('Phase \theta_i');
 phDiff = diff(bins(:,1))
 absDiff = abs(pi - phDiff)
-
+addData = zeros(size(bins));
+for i = 500:na+1
+    [index,bins] = phaseSeparation(y_full(i,:));
+    addData = addData + bins;
+end
+addData = addData/(length(500:na+1));
 

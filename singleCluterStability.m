@@ -36,12 +36,12 @@ xlim([minx maxx]);
 ylim([miny maxy]);
 daspect([1 1 1]);
 %%
-gamma1 = gamma1-0.005;
+gamma1 = gamma1+0.005;
 gamma2 = gamma2-0.005;
 % J = 0.1;
 % K = -1;
 y_stable = y_full(end,:);
-y_stable(2*N+1:end) = randn(N,1)*10e-3;
+y_stable(2*N+1:end) = randn(N,1)*10e-8;
 %y_stable(2*N + 20) = 6;
 figure;
 colormap('hsv');
@@ -52,7 +52,7 @@ ylim([miny maxy]);
 daspect([1 1 1]); 
 %%
 options = odeset('RelTol',1e-6,'AbsTol',1e-6);
-[T,y_new] = ode45(@swarmalator_matrixform,[0:stepSize :20*timeSteps*stepSize],y_stable, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
+[T,y_new] = ode45(@swarmalator_matrixform,[0:stepSize :10*timeSteps*stepSize],y_stable, options, dim,N,zeros(1,N),K,J,gamma1,gamma2);
 
 %%
 
@@ -77,3 +77,6 @@ for i = 1:100
     grid on;
     hold on
 end
+J = jacobianMatrix(y_new(end,:),N,K,gamma1,gamma2);
+eig(J)
+gamma1+ 2*gamma2
