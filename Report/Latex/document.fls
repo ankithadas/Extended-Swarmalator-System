@@ -4,30 +4,43 @@ INPUT c:/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.tex
 OUTPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.log
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/asme2ej.cls
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/asme2ej.cls
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/times.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/times.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/mathptm.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/mathptm.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/revtex4-1.cls
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/revtex4-1.cls
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/aps4-1.rtx
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/aps4-1.rtx
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/aps4-1.rtx
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+INPUT c:/texlive/2018/texmf-dist/tex/latex/textcase/textcase.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/textcase/textcase.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/t1enc.def
 INPUT c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
@@ -40,10 +53,36 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grffile.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grffile.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/tools/xr.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/tools/xr.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -57,38 +96,24 @@ INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 INPUT c:/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-INPUT c:/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT c:/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT c:/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 INPUT c:/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
-INPUT c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/url/url.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT c:/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/breqn/breqn.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/breqn/breqn.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -119,9 +144,6 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.aux
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.aux
 OUTPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.aux
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -142,209 +164,114 @@ OUTPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.out
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.out
 OUTPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.out
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptmcm.fd
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omlptmcm.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omlptmcm.fd
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omspzccm.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omspzccm.fd
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omxpsycm.fd
-INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/omxpsycm.fd
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
+OUTPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/documentNotes.bib
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecti0900.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecbx0900.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm
 INPUT c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmr.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zpsycmrv.vf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmr.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zpzccmry.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zpzccmry.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/TwoCluster-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
-INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zptmcmrm.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpzccmry.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/zpsycmrv.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zpsycmrv.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zpzccmry.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmr.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmr.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/zptmcmrm.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/staticSingleClusterState-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/twoClustersWithR100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/ActiveSingle-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Active4Clust-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phasevstimeN_100-eps-converted-to.pdf
+INPUT c:/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn.eps
@@ -357,6 +284,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/dvn-e
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClusterNotLog.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClusterNotLog.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClusterNotLog.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClusterNotLog.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClusterNotLog-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClusterNotLog-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/interClusterNotLog.eps
@@ -366,6 +294,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/inter
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/PhaseVtimeRogues.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/PhaseVtimeRogues.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/PhaseVtimeRogues.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/PhaseVtimeRogues.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/PhaseVtimeRogues-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/PhaseVtimeRogues-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/PhaseVtimeRogues.eps
@@ -375,6 +304,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Phase
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unstablePositive.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unstablePositive.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unstablePositive.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unstablePositive.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unstablePositive-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unstablePositive-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unstablePositive.eps
@@ -384,6 +314,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/unsta
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/LinearUnstable.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/LinearUnstable.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/LinearUnstable.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/LinearUnstable.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/LinearUnstable-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/LinearUnstable-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/LinearUnstable.eps
@@ -393,14 +324,14 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/Linea
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/negativeStable-eps-converted-to.pdf
-INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
-INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/cyclicMotion.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/cyclicMotion.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/cyclicMotion.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/cyclicMotion.eps
@@ -413,6 +344,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/cycli
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circleArrangment.eps
@@ -422,6 +354,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/circl
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radiiVtime.eps
@@ -431,6 +364,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/radii
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtime.eps
@@ -440,6 +374,7 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/cente
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/centerDistVtimeError.eps
@@ -449,23 +384,42 @@ INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/cente
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar.eps
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/phaseVar-eps-converted-to.pdf
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/gui.png
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/gui.png
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/gui.png
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/figures/gui.png
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.bbl
+INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.bbl
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.aux
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.out
 INPUT c:/Users/Ankith A Das/Documents/Summer Research/Report/Latex/document.out
-INPUT c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
-INPUT c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb
+INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb

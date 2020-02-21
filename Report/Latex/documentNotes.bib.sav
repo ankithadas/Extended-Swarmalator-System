@@ -1,0 +1,51 @@
+% Encoding: UTF-8
+
+@Control{apsrev41Control,
+  author = {08},
+  year   = {1},
+  editor = {1},
+  pages  = {0},
+}
+
+@Control{REVTEX41Control,
+}
+
+@Article{Sheeba2008,
+  author        = {Sheeba, Jane H. and Stefanovska, Aneta and McClintock, Peter V. E.},
+  title         = {Neuronal synchrony during anesthesia: a thalamocortical model},
+  journal       = {Biophysical journal},
+  year          = {2008},
+  volume        = {95},
+  number        = {18586847},
+  pages         = {2722--2727},
+  month         = sep,
+  issn          = {0006-3495},
+  __markedentry = {[Ankith A Das:]},
+  abstract      = {There is growing evidence in favor of the temporal-coding hypothesis that temporal correlation of neuronal discharges may serve to bind distributed neuronal activity into unique representations and, in particular, that theta (3.5-7.5 Hz) and delta (0.5 < 3.5 Hz) oscillations facilitate information coding. The theta- and delta-rhythms are shown to be involved in various sleep stages, and during anesthesia, they undergo changes with the depth of anesthesia. We introduce a thalamocortical model of interacting neuronal ensembles to describe phase relationships between theta- and delta-oscillations, especially during deep and light anesthesia. Asymmetric and long-range interactions among the thalamocortical neuronal oscillators are taken into account. The model results are compared with experimental observations. The delta- and theta-activities are found to be separately generated and are governed by the thalamus and cortex, respectively. Changes in the degree of intraensemble and interensemble synchrony imply that the neuronal ensembles inhibit information coding during deep anesthesia and facilitate it during light anesthesia.},
+  comment       = {18586847[pmid]
+PMC2527271[pmcid]},
+  database      = {PubMed},
+  edition       = {2008/06/27},
+  keywords      = {*Anesthesia, Arousal/physiology, Awareness/physiology, Cerebral Cortex/*cytology/*physiology, Cortical Synchronization, Delta Rhythm, Electroencephalography, *Models, Biological, Neurons/*metabolism, Thalamus/*cytology/*physiology, Theta Rhythm, Time Factors},
+  language      = {eng},
+  publisher     = {The Biophysical Society},
+  url           = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2527271/},
+}
+
+@Article{O’Keeffe2017,
+  author        = {O’Keeffe, Kevin P. and Hong, Hyunsuk and Strogatz, Steven H.},
+  title         = {Oscillators that sync and swarm},
+  journal       = {Nature Communications},
+  year          = {2017},
+  volume        = {8},
+  number        = {1},
+  pages         = {1504},
+  month         = nov,
+  issn          = {2041-1723},
+  __markedentry = {[Ankith A Das:6]},
+  abstract      = {Synchronization occurs in many natural and technological systems, from cardiac pacemaker cells to coupled lasers. In the synchronized state, the individual cells or lasers coordinate the timing of their oscillations, but they do not move through space. A complementary form of self-organization occurs among swarming insects, flocking birds, or schooling fish; now the individuals move through space, but without conspicuously altering their internal states. Here we explore systems in which both synchronization and swarming occur together. Specifically, we consider oscillators whose phase dynamics and spatial dynamics are coupled. We call them swarmalators, to highlight their dual character. A case study of a generalized Kuramoto model predicts five collective states as possible long-term modes of organization. These states may be observable in groups of sperm, Japanese tree frogs, colloidal suspensions of magnetic particles, and other biological and physical systems in which self-assembly and synchronization interact.},
+  refid         = {O’Keeffe2017},
+  url           = {https://doi.org/10.1038/s41467-017-01190-3},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

@@ -74,7 +74,7 @@ y_steady = reshape(y_steady,1,[]);
 
 %%
 % Solve the new system
-[~,y_dy] = ode45(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize*50],y_steady, options, dim,N_dy,zeros(1,N_dy),K,J,gamma1,gamma2);
+[~,y_dy] = ode45(@swarmalator_matrixform,[0:stepSize:timeSteps*stepSize*150],y_steady, options, dim,N_dy,zeros(1,N_dy),K,J,gamma1,gamma2);
 
 %%
 y_dy(:,dim*N_dy + 1:end) = mod(y_dy(:,dim*N_dy + 1:end),2*pi);
@@ -129,3 +129,7 @@ end
 %%
 Jacob = jacobianMatrix(y_dy(end,:),N_dy,K,gamma1,gamma2);
 eig(Jacob)
+
+%%
+figure
+plot(1:length(y_dy(300:end,end)),y_dy(300:end,end));

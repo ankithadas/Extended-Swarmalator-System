@@ -117,7 +117,7 @@ end
 tic
 options = odeset('RelTol',1e-6,'AbsTol',1e-6,'Stats','on');
 dim = 2;
-na = 100;
+na = 400;
 %na = 10000;
 dts = 1;
 
@@ -127,7 +127,7 @@ time = dts*(1:1:na);
 K = -0.5;
 J = 0.8;
 gamma1 = 2/3;
-gamma2 = -1/3;
+gamma2 = -0.5;
 
 y00 = rand((dim+1)*N,1);
 
@@ -161,9 +161,9 @@ ch = toc
 % save(file1);
 
 %
-% dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
+dir = sprintf('videos\\swarmalator_%s_N_%i_K_%g_J_%g_g1_%g_g2_%g',distro,N,K,J,gamma1,gamma2);
 % 
-% status = system(['mkdir ',dir]);
+status = system(['mkdir ',dir]);
 
 minx = min(y_full(:,1:N),[],'all');
 maxx = max(y_full(:,1:N),[],'all');
@@ -192,10 +192,10 @@ for i=2:na+1
     plot1.YData = y_full(i,N+1:2*N);
     plot1.CData = y_full(i,2*N + 1:end);
     %drawnow update
-    pause(0.05);
+    pause(0.1);
     %waitforbuttonpress;
-    % file2 = sprintf('J_1.2\\fig_%05i.png',i);
-    % saveas(f,file2);
+    %file2 = sprintf('%s\\fig_%05i.png',dir,i);
+    %saveas(f,file2);
 end
  
 

@@ -8,15 +8,15 @@ clc;
 close all;
 
 
-J = 0.8;
+J = -0.8;
 K = -0.5;
 gamma1 = 2/3;
 gamma2 = -1/3;
 dim = 2;
 stepSize = 1;
-timeSteps = 100;
+timeSteps = 500;
 reset(RandStream.getGlobalStream,1);
-n = 10;
+n = 6;
 r = 0.5;
 theta = linspace(0, 2*pi,n+1);
 theta(end) = [];

@@ -1,17 +1,19 @@
-\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{The Model}{}% 2
-\BOOKMARK [1][-]{section.3}{Optimization of the ode solver}{}% 3
-\BOOKMARK [1][-]{section.4}{Cluster formation and stability}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Static Two cluster state}{section.4}% 5
-\BOOKMARK [2][-]{subsection.4.2}{Inter-cluster distance for Static two cluster state}{section.4}% 6
-\BOOKMARK [1][-]{section.5}{Two clusters with Rogues}{}% 7
-\BOOKMARK [2][-]{subsection.5.1}{Active single cluster state}{section.5}% 8
-\BOOKMARK [2][-]{subsection.5.2}{Active three-four cluster state}{section.5}% 9
-\BOOKMARK [2][-]{subsection.5.3}{Static bimodal single cluster state}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.4}{Stability}{section.5}% 11
-\BOOKMARK [1][-]{section.6}{Periodic motion of Rogues}{}% 12
-\BOOKMARK [1][-]{section.7}{Circular ring state}{}% 13
-\BOOKMARK [1][-]{section.8}{Phase Variation within the clusters}{}% 14
-\BOOKMARK [1][-]{section.9}{Front end application}{}% 15
-\BOOKMARK [1][-]{section.10}{Conclusion}{}% 16
-\BOOKMARK [1][-]{section.11}{References}{}% 17
+\BOOKMARK [0][-]{section*.2}{An Extension of the Swarmalator Model}{}% 2
+\BOOKMARK [1][-]{section*.1}{Abstract}{section*.2}% 1
+\BOOKMARK [1][-]{section.1}{Introduction}{section*.2}% 3
+\BOOKMARK [1][-]{section.2}{The Model}{section*.2}% 4
+\BOOKMARK [1][-]{section.3}{Optimization of the ode solver}{section*.2}% 5
+\BOOKMARK [1][-]{section.4}{Cluster formation and stability}{section*.2}% 6
+\BOOKMARK [1][-]{section.5}{Static Two cluster state}{section*.2}% 7
+\BOOKMARK [2][-]{subsection.5.1}{Inter-cluster distance for Static two cluster state}{section.5}% 8
+\BOOKMARK [1][-]{section.6}{Two clusters with Rogues}{section*.2}% 9
+\BOOKMARK [1][-]{section.7}{Active single cluster state}{section*.2}% 10
+\BOOKMARK [1][-]{section.8}{Active three-four cluster state}{section*.2}% 11
+\BOOKMARK [1][-]{section.9}{Static bimodal single cluster state}{section*.2}% 12
+\BOOKMARK [1][-]{section.10}{Stability}{section*.2}% 13
+\BOOKMARK [1][-]{section.11}{Periodic motion of Rogues}{section*.2}% 14
+\BOOKMARK [1][-]{section.12}{Circular ring state}{section*.2}% 15
+\BOOKMARK [1][-]{section.13}{Phase Variation within the clusters}{section*.2}% 16
+\BOOKMARK [1][-]{section.14}{Front end application}{section*.2}% 17
+\BOOKMARK [1][-]{section.15}{Discussion}{section*.2}% 18
+\BOOKMARK [1][-]{section*.3}{References}{section*.2}% 19
